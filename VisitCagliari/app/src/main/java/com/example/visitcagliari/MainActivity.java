@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static ArrayList<Users> registeredUsers=new ArrayList<>();
 
-    Users prova=new Users("Mirko","Contini","mirrko01","mirko");
+    Users prova=new Users("Mirko","Contini","mirko","mirko");
     public static Users loggedUser;
     private EditText editTextUsername, editTextPassword;
     private TextView redirectRegistrazione;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 if (authenticate(username, password)) {
                     // Login riuscito
                     Toast.makeText(MainActivity.this, "Login riuscito", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(MainActivity.this, ListaCategorieActivity.class);
                     startActivity(intent);
                 } else {
                     // Login fallito
