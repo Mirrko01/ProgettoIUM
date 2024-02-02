@@ -58,6 +58,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Button map = findViewById(R.id.provaMappa);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Monumenti.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     private boolean authenticate(String username, String password) {
@@ -69,4 +79,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
+
 }

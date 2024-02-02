@@ -72,6 +72,13 @@
                 android:text="Non sei ancora registrato? clicca qui!"
                 android:textSize="17dp" />
 
+            <Button
+                android:id="@+id/provaMappa"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Mappa"/>
+
 
         </LinearLayout>
     </LinearLayout>
