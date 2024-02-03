@@ -1,2 +1,14 @@
-package com.example.visitcagliari;public interface DirectionsApiService {
+package com.example.visitcagliari;
+// DirectionsApiService.java
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
+public interface DirectionsApiService {
+    @GET("maps/api/directions/json")
+    Call<DirectionsResponse> getDirections(
+            @Query("origin") String origin,
+            @Query("destination") String destination,
+            @Query("key") String apiKey
+    );
 }
