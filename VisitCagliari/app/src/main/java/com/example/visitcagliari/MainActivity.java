@@ -72,12 +72,16 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean authenticate(String username, String password) {
         for (Users utente : registeredUsers){
-            if(utente.username.equals(username) && utente.password.equals(password)){
-                loggedUser=utente;
-                return true;
+            if(!utente.username.equals(username)){
+                Toast.makeText(MainActivity.this, "Username errato", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+            else if(!utente.password.equals(password)){
+                Toast.makeText(MainActivity.this, "Password errata", Toast.LENGTH_SHORT).show();
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
 

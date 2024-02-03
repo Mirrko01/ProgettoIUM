@@ -1,12 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Chiese">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Sss"
-        android:gravity="center"/>
+         android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+        <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/church"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/bonaria"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BASILICA DI BONARIA          "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <!-- Spazio tra TextView e ImageView -->
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- ImageView per la foto della chiesa -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bonaria"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="20dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/saturnino"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHIESA DI SAN SATURNINO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sansaturnino"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/efisio"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHIESA DI SANT'EFISIO        "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/santefisio"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="20dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/vergine"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:id="@+id/nomeChiesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VERGINE DELLA SALUTE"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <!-- Spazio tra TextView e ImageView -->
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- ImageView per la foto della chiesa -->
+            <ImageView
+                android:id="@+id/fotoChiesa"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/verginedellasalute"/>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

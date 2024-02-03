@@ -3,4 +3,143 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/church"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/monteclaro"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARCO DI MONTECLARO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <!-- Spazio tra TextView e ImageView -->
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- ImageView per la foto della chiesa -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/monteclaro"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/urpinu"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARCO DI MONTECLARO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bonaria"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/terramaini"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARCO DI MONTECLARO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bonaria"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/giardini"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:id="@+id/nomeChiesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARCO DI MONTECLARO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <!-- Spazio tra TextView e ImageView -->
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- ImageView per la foto della chiesa -->
+            <ImageView
+                android:id="@+id/fotoChiesa"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bonaria"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

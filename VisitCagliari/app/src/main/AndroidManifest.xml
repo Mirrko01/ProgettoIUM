@@ -66,6 +66,32 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".Musei"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Parchi"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".Ristoranti"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD2XQ_-PJvrkNClNwzM5ikH463cxATdH8U"/>
     </application>
