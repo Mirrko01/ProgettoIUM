@@ -33,7 +33,7 @@ public class Monumenti extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         this.gmap = googleMap;
 
-        LatLng map = new LatLng(20.5937,78.9629);
+        LatLng map = new LatLng(39.216127930962635, 9.116546781133254);
         this.gmap.addMarker(new MarkerOptions().position(map).title("mappa"));
         this.gmap.moveCamera(CameraUpdateFactory.newLatLng(map));
 

@@ -11,11 +11,12 @@
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <ImageView
+            android:id="@+id/logoImage"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:src="@drawable/church"/>
+
     </LinearLayout>
 
     <GridLayout
@@ -42,6 +43,7 @@
 
 
         <ImageView
+            android:id="@+id/museumImg"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
@@ -50,33 +52,37 @@
             android:src="@drawable/museum" />
 
         <ImageView
+            android:id="@+id/parkImg"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="center"
-            android:src="@drawable/museum" />
+            android:src="@drawable/park" />
         <ImageView
+            android:id="@+id/restaurantImg"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="center"
-            android:src="@drawable/museum" />
+            android:src="@drawable/restaurant" />
         <ImageView
+            android:id="@+id/monumentImg"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="center"
-            android:src="@drawable/museum" />
+            android:src="@drawable/monument" />
         <ImageView
+            android:id="@+id/otherImg"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="center"
-            android:src="@drawable/museum" />
+            android:src="@drawable/menu" />
 
 
     </GridLayout>

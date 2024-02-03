@@ -4,18 +4,16 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#000000">
+        android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/nome"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="ciao"
-                >
-
-
+                android:text="ciao">
             </TextView>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
