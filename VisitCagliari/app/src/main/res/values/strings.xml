@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">VisitCagliari</string>
+
+    <string-array name="transportation_options">
+        <item>A piedi</item>
+        <item>In macchina</item>
+        <item>In bici</item>
+        <item>In bus</item>
+    </string-array>
+
+
 </resources>

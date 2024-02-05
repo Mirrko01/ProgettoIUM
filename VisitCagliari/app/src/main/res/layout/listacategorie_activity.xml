@@ -95,14 +95,14 @@
             android:layout_gravity="center"
             android:src="@drawable/monument" />
 
-        <ImageView
-            android:id="@+id/otherImg"
+        <Button
+            android:id="@+id/pianifica"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_rowWeight="2"
             android:layout_columnWeight="1"
             android:layout_gravity="center"
-            android:src="@drawable/menu" />
+            android:text="Pianifica"/>
     </GridLayout>
 
     <LinearLayout

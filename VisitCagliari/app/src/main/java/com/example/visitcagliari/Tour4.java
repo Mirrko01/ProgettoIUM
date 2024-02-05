@@ -1,2 +1,4 @@
-package com.example.visitcagliari;public class Tour4 {
+package com.example.visitcagliari;
+
+public class Tour4 {
 }
