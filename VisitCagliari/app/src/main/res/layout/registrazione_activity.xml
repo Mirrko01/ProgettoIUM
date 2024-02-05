@@ -38,7 +38,8 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="50dp"
-                android:text="Nome" />
+                android:hint="Inserisci il tuo nome"
+                android:textColorHint="@color/white"/>
 
 
             <TextView
@@ -55,7 +56,8 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="50dp"
-                android:text="Cognome" />
+                android:hint="Inserisci il tuo cognome"
+                android:textColorHint="@color/white" />
 
 
             <TextView
@@ -72,7 +74,8 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="50dp"
-                android:text="Username" />
+                android:hint="Inserisci il tuo username"
+                android:textColorHint="@color/white" />
 
 
             <TextView
@@ -95,7 +98,8 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:text="Registrati"/>
+                android:hint="Inserisci la tua password"
+                android:textColorHint="@color/white"/>
 
 
         </LinearLayout>

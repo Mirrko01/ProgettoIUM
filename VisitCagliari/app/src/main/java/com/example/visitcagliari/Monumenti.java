@@ -1,42 +1,59 @@
 package com.example.visitcagliari;
- import android.os.Bundle;
- import android.widget.FrameLayout;
 
- import androidx.appcompat.app.AppCompatActivity;
- import androidx.fragment.app.FragmentActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
- import com.google.android.gms.maps.CameraUpdate;
- import com.google.android.gms.maps.CameraUpdateFactory;
- import com.google.android.gms.maps.GoogleMap;
- import com.google.android.gms.maps.MapView;
- import com.google.android.gms.maps.OnMapReadyCallback;
- import com.google.android.gms.maps.SupportMapFragment;
- import com.google.android.gms.maps.model.LatLng;
- import com.google.android.gms.maps.model.MarkerOptions;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Monumenti extends FragmentActivity implements OnMapReadyCallback {
+public class Monumenti extends AppCompatActivity {
 
-    GoogleMap gmap;
-    FrameLayout map;
+    LinearLayout bastione, elefante, castello,cristina;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bastione);
+        setContentView(R.layout.monumenti_activity);
 
-         map = findViewById(R.id.map);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-    }
+        bastione=findViewById(R.id.bastione);
+        elefante=findViewById(R.id.elefante);
+        castello=findViewById(R.id.castello);
+        cristina=findViewById(R.id.cristina);
 
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        this.gmap = googleMap;
 
-        LatLng map = new LatLng(39.216127930962635, 9.116546781133254);
-        this.gmap.addMarker(new MarkerOptions().position(map).title("mappa"));
-        this.gmap.moveCamera(CameraUpdateFactory.newLatLng(map));
+            bastione.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Monumenti.this, Bastione.class);
+                startActivity(intent);
+            }
+        });
 
-        this.gmap.animateCamera(CameraUpdateFactory.newLatLngZoom(map,15));
+        elefante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Monumenti.this, Bastione.class);
+                startActivity(intent);
+            }
+        });
+
+        castello.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Monumenti.this, Bastione.class);
+                startActivity(intent);
+            }
+        });
+
+        cristina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Monumenti.this, Bastione.class);
+                startActivity(intent);
+            }
+        });
     }
 }

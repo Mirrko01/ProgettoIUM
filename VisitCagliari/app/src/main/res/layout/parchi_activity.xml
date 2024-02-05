@@ -68,47 +68,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PARCO DI MONTECLARO"
+                android:text="PARCO DI MONTE URPINU"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:gravity="start"/>
 
             <Space
-                android:layout_width="16dp"
+                android:layout_width="11dp"
                 android:layout_height="wrap_content"/>
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/bonaria"/>
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/urpinu"/>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/terramaini"
-            android:layout_width="408dp"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <!-- TextView per il nome della chiesa -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PARCO DI MONTECLARO"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:gravity="start"/>
-
-            <Space
-                android:layout_width="16dp"
-                android:layout_height="wrap_content"/>
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/bonaria"/>
-
-        </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/giardini"
@@ -119,10 +92,37 @@
 
             <!-- TextView per il nome della chiesa -->
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GIARDINI PUBBLICI"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/giardini"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/terramaini"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
                 android:id="@+id/nomeChiesa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PARCO DI MONTECLARO"
+                android:text="PARCO TERRAMAINI"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:gravity="start"/>
@@ -137,7 +137,7 @@
                 android:id="@+id/fotoChiesa"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/bonaria"/>
+                android:src="@drawable/terramaini"/>
 
         </LinearLayout>
     </LinearLayout>

@@ -1,6 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Monumenti">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/church"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/bastione"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BASTIONE DI SAINT REMY"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <!-- Spazio tra TextView e ImageView -->
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- ImageView per la foto della chiesa -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bastione"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="20dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/elefante"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TORRE DELL'ELEFANTE"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/elefante"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/castello"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CASTELLO DI SAN MICHELE"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/castello"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="408dp"
+            android:layout_height="20dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/cristina"
+            android:layout_width="408dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TextView per il nome della chiesa -->
+            <TextView
+                android:id="@+id/nomeChiesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PORTA CRISTINA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"/>
+
+            <!-- Spazio tra TextView e ImageView -->
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- ImageView per la foto della chiesa -->
+            <ImageView
+                android:id="@+id/fotoChiesa"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cristina"/>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

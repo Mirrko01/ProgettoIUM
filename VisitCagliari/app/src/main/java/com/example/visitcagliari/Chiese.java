@@ -27,7 +27,7 @@ public class Chiese extends AppCompatActivity {
         bonaria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Chiese.this, Monumenti.class);
+                Intent intent = new Intent(Chiese.this, Bastione.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class Chiese extends AppCompatActivity {
         saturnino.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Chiese.this, Monumenti.class);
+                Intent intent = new Intent(Chiese.this, Bastione.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +43,7 @@ public class Chiese extends AppCompatActivity {
         efisio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Chiese.this, Monumenti.class);
+                Intent intent = new Intent(Chiese.this, Bastione.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class Chiese extends AppCompatActivity {
         vergine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Chiese.this, Monumenti.class);
+                Intent intent = new Intent(Chiese.this, Bastione.class);
                 startActivity(intent);
             }
         });
