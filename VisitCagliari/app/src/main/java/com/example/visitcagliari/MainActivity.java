@@ -20,12 +20,13 @@ public class MainActivity extends AppCompatActivity {
     Users prova=new Users("Mirko","Contini","mirko","mirko");
     public static Users loggedUser;
     private EditText editTextUsername, editTextPassword;
-    private TextView redirectRegistrazione;
+    TextView redirectRegistrazione;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         registeredUsers.add(prova);
+
 
         editTextUsername = findViewById(R.id.username);
         editTextPassword = findViewById(R.id.password);
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean authenticate(String username, String password) {
+
         for (Users utente : registeredUsers){
             if(!utente.username.equals(username)){
                 Toast.makeText(MainActivity.this, "Username errato", Toast.LENGTH_SHORT).show();

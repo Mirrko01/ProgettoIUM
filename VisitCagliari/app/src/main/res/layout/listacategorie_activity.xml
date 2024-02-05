@@ -15,9 +15,15 @@
 
         <ImageView
             android:id="@+id/logoImage"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="80dp"
             android:src="@drawable/church" />
+
+        <ImageView
+            android:id="@+id/account"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:src="@drawable/user" />
 
         <Space
             android:layout_width="match_parent"

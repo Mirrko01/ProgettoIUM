@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="serif"
                 android:text="Nome"
-                android:textSize="17dp" />
+                android:textSize="17dp"/>
 
             <EditText
                 android:id="@+id/nome"
@@ -91,14 +91,15 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:text="Password" />
+                android:hint="Inserisci la tua password"
+                android:textColorHint="@color/white" />
 
             <Button
                 android:id="@+id/registrazioneButton"
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:hint="Inserisci la tua password"
+                android:hint="Registrati"
                 android:textColorHint="@color/white"/>
 
 

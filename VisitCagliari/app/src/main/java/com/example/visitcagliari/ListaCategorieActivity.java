@@ -10,7 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ListaCategorieActivity extends AppCompatActivity {
 
-    ImageView churchBtn, museumBtn, restaurantBtn, parkBtn, monumentBtn, otherBtn;
+    ImageView churchBtn, museumBtn, restaurantBtn, parkBtn, monumentBtn, otherBtn, accountBtn;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class ListaCategorieActivity extends AppCompatActivity {
         parkBtn = findViewById(R.id.parkImg);
         monumentBtn = findViewById(R.id.monumentImg);
         otherBtn = findViewById(R.id.otherImg);
+        accountBtn=findViewById(R.id.account);
 
         churchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +72,17 @@ public class ListaCategorieActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        accountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListaCategorieActivity.this, DatiPersonali.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }
