@@ -16,8 +16,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     public static ArrayList<Users> registeredUsers=new ArrayList<>();
-
-    Users prova=new Users("Mirko","Contini","mirko","mirko");
+    public Users prova=new Users("Mirko","Contini","mirko","mirko");
     public static Users loggedUser;
     private EditText editTextUsername, editTextPassword;
     TextView redirectRegistrazione;
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         registeredUsers.add(prova);
-
+        int x=registeredUsers.size();
 
         editTextUsername = findViewById(R.id.username);
         editTextPassword = findViewById(R.id.password);
@@ -72,19 +71,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean authenticate(String username, String password) {
+        boolean foundUser = false;
 
-        for (Users utente : registeredUsers){
-            if(!utente.username.equals(username)){
-                Toast.makeText(MainActivity.this, "Username errato", Toast.LENGTH_SHORT).show();
-                return false;
-            }
-            else if(!utente.password.equals(password)){
-                Toast.makeText(MainActivity.this, "Password errata", Toast.LENGTH_SHORT).show();
-                return false;
+        for (Users utente : registeredUsers) {
+            if (utente.username.equals(username)) {
+                foundUser = true;
+                if (utente.password.equals(password)) {
+                    loggedUser = utente;
+                    return true; // Login riuscito
+                } else {
+                    Toast.makeText(MainActivity.this, "Password errata", Toast.LENGTH_SHORT).show();
+                    return false; // Password errata
+                }
             }
         }
-        return true;
+        if (!foundUser) {
+            Toast.makeText(MainActivity.this, "Username errato", Toast.LENGTH_SHORT).show();
+        }
+        return false; // Utente non trovato
     }
-
-
 }

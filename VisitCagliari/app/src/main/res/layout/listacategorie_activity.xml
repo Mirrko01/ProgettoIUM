@@ -19,6 +19,8 @@
             android:layout_height="80dp"
             android:src="@drawable/church" />
 
+
+
         <ImageView
             android:id="@+id/account"
             android:layout_width="40dp"

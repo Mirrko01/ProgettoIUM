@@ -17,26 +17,35 @@ public class RegistrazioneActivity extends AppCompatActivity {
 
     private EditText editTextUsername, editTextPassword, editTextNome, editTextCognome;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registrazione_activity);
 
         editTextUsername = findViewById(R.id.username);
         editTextPassword = findViewById(R.id.password);
-        editTextNome=findViewById(R.id.nome);
-        editTextCognome=findViewById(R.id.cognome);
+        editTextNome = findViewById(R.id.nome);
+        editTextCognome = findViewById(R.id.cognome);
 
-        Button buttonLogin = findViewById(R.id.registrazioneButton);
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
+        Button buttonRegistrazione = findViewById(R.id.registrazioneButton);
+        buttonRegistrazione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nome= editTextNome.getText().toString();
-                String cognome=editTextCognome.getText().toString();
+                String nome = editTextNome.getText().toString();
+                String cognome = editTextCognome.getText().toString();
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
 
-                Users nuovoUtente = new Users(nome,cognome,username,password);
+                // Creazione di un nuovo utente
+                Users nuovoUtente = new Users(nome, cognome, username, password);
+
+                // Aggiunta del nuovo utente alla lista di utenti registrati
                 MainActivity.registeredUsers.add(nuovoUtente);
+
+                // Messaggio di conferma registrazione
+                Toast.makeText(RegistrazioneActivity.this, "Registrazione completata", Toast.LENGTH_SHORT).show();
+
+                // Reindirizzamento alla schermata di login
                 Intent intent = new Intent(RegistrazioneActivity.this, MainActivity.class);
                 startActivity(intent);
             }
