@@ -37,7 +37,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="30dp"
                 android:hint="Inserisci il tuo nome"
                 android:textColorHint="@color/white"/>
 
@@ -55,7 +55,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="30dp"
                 android:hint="Inserisci il tuo cognome"
                 android:textColorHint="@color/white" />
 
@@ -73,7 +73,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="30dp"
                 android:hint="Inserisci il tuo username"
                 android:textColorHint="@color/white" />
 
@@ -94,7 +94,28 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
                 android:hint="Inserisci la tua password"
+                android:textColorHint="@color/white" />
+
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="Conferma password"
+                android:textSize="17dp" />
+
+
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/confermaPassword"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Conferma la tua password"
                 android:textColorHint="@color/white" />
 
             <Button
@@ -108,6 +129,4 @@
 
         </LinearLayout>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

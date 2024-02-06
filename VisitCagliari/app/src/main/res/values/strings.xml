@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">VisitCagliari</string>
+    <string name="bastioneDesc">Porta d’accesso dal quartiere di Villanova a quello fortificato di Castello, nel cuore della città vecchia, il bastione, che deve il nome al barone di Saint Remy, primo viceré piemontese, si affaccia su piazza Costituzione, all’incrocio tra due vie storiche della città È inconfondibilmente un simbolo di Cagliari, uno dei suoi complessi monumentali più maestosi e di maggior pregio, nonché prestigioso spazio espositivo.
+
+La passeggiata coperta e la maestosa terrazza Umberto I furono progettate da Giuseppe Costa e Fulgenzio Setti, su un’idea di metà Ottocento dall’architetto Gaetano Cima, e costruite in stile classicheggiante tra 1896 e 1902 sulle antiche cortine difensive del circuito fortificato della città medievale. Il bastione di Saint Remy è il risultato di spianamento e riutilizzo degli antichi bastioni dello Sperone e della Zecca, costruiti dagli spagnoli nella seconda metà del Cinquecento.</string>
+
 
     <string-array name="transportation_options">
         <item>A piedi</item>
@@ -7,6 +11,8 @@
         <item>In bici</item>
         <item>In bus</item>
     </string-array>
+
+
 
 
 </resources>

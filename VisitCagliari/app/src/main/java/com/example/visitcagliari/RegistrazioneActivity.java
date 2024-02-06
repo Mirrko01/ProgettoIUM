@@ -15,7 +15,8 @@ import java.util.ArrayList;
 
 public class RegistrazioneActivity extends AppCompatActivity {
 
-    private EditText editTextUsername, editTextPassword, editTextNome, editTextCognome;
+    private EditText editTextUsername, editTextPassword, editTextNome, editTextCognome, confermPSW;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class RegistrazioneActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.password);
         editTextNome = findViewById(R.id.nome);
         editTextCognome = findViewById(R.id.cognome);
+        confermPSW=findViewById(R.id.confermaPassword);
 
         Button buttonRegistrazione = findViewById(R.id.registrazioneButton);
         buttonRegistrazione.setOnClickListener(new View.OnClickListener() {
@@ -35,19 +37,29 @@ public class RegistrazioneActivity extends AppCompatActivity {
                 String cognome = editTextCognome.getText().toString();
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
+                String conferma= confermPSW.getText().toString();
 
-                // Creazione di un nuovo utente
-                Users nuovoUtente = new Users(nome, cognome, username, password);
+                if(password.equals(conferma)){
+                    // Creazione di un nuovo utente
+                    Users nuovoUtente = new Users(nome, cognome, username, password);
 
-                // Aggiunta del nuovo utente alla lista di utenti registrati
-                MainActivity.registeredUsers.add(nuovoUtente);
+                    // Aggiunta del nuovo utente alla lista di utenti registrati
+                    MainActivity.registeredUsers.add(nuovoUtente);
 
-                // Messaggio di conferma registrazione
-                Toast.makeText(RegistrazioneActivity.this, "Registrazione completata", Toast.LENGTH_SHORT).show();
+                    // Messaggio di conferma registrazione
+                    Toast.makeText(RegistrazioneActivity.this, "Registrazione completata", Toast.LENGTH_SHORT).show();
 
-                // Reindirizzamento alla schermata di login
-                Intent intent = new Intent(RegistrazioneActivity.this, MainActivity.class);
-                startActivity(intent);
+                    // Reindirizzamento alla schermata di login
+                    Intent intent = new Intent(RegistrazioneActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                else{
+                    Toast.makeText(RegistrazioneActivity.this, "Le due password non corrispondono", Toast.LENGTH_SHORT).show();
+                    editTextPassword.setText("");
+                    confermPSW.setText("");
+                }
+
+
             }
         });
     }
