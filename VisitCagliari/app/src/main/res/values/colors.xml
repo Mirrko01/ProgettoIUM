@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Colori -->
+    <color name="background_color">#bdb76b</color> <!-- Terra bruciata e sabbia -->
+    <color name="text_color">#3C3C3C</color> <!-- Grigio scuro per testo -->
+    <color name="accent_color">#006666</color> <!-- Blu scuro per dettagli -->
+    <color name="button_color">#CC6600</color> <!-- Ruggine -->
+
+    <!-- Sfondi -->
+    <drawable name="login_background">#bdb76b</drawable> <!-- Sfondo bianco -->
+    <drawable name="edittext_background">#F5F5F5</drawable> <!-- Sfondo grigio chiaro per EditText -->
+    <drawable name="button_background">#bdb76b</drawable> <!-- Sfondo colore ruggine per pulsanti -->
+
+    <!-- Dimensioni -->
+    <dimen name="button_corner_radius">8dp</dimen> <!-- Raggio degli angoli dei pulsanti -->
+
+    <!-- Stili -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Personalizzazioni -->
+        <item name="android:windowBackground">@color/background_color</item> <!-- Colore di sfondo dell'app -->
+        <item name="android:textColor">@color/text_color</item> <!-- Colore del testo -->
+        <item name="colorAccent">@color/accent_color</item> <!-- Colore di accentuazione per elementi UI -->
+    </style>
 </resources>

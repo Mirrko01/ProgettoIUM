@@ -1,87 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent">
+        android:background="@drawable/login_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-            android:orientation="vertical"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="#143F6B"
-            >
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:hint="Inserisci il tuo username"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
 
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Username"
-                android:textColor="@color/white"
-                android:textSize="17dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
-            <EditText
-                android:id="@+id/username"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="50dp"
-                android:hint="Inserisci il tuo username" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:hint="Inserisci la tua password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
 
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/button_background"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
 
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Password"
-                android:textColor="@color/white"
-                android:textSize="17dp" />
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non sei ancora registrato? Clicca qui!"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
 
-            <EditText
-                android:inputType="textPassword"
-                android:id="@+id/password"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:hint="Inserisci la tua password"/>
+        <Button
+            android:id="@+id/registrazioneRedirect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrati"
+            android:background="@drawable/button_background"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/provaMappa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mappa"
+            android:background="@drawable/button_background"
+            android:padding="12dp"
+            android:textSize="18sp"/>
 
-            <Button
-                android:id="@+id/loginButton"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:text="Login"/>
-
-            <TextView
-                android:id="@+id/registrazioneRedirect"
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Non sei ancora registrato? clicca qui!"
-                android:textSize="17dp" />
-
-            <Button
-                android:id="@+id/provaMappa"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:text="Mappa"/>
-        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
