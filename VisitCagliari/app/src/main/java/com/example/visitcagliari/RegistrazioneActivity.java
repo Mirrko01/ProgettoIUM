@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 public class RegistrazioneActivity extends AppCompatActivity {
 
@@ -39,7 +40,21 @@ public class RegistrazioneActivity extends AppCompatActivity {
                 String password = editTextPassword.getText().toString();
                 String conferma= confermPSW.getText().toString();
 
-                if(password.equals(conferma)){
+
+                if(!isStringPulita(nome)){
+                    Toast.makeText(RegistrazioneActivity.this, "Nome non valido", Toast.LENGTH_SHORT).show();
+                    editTextNome.setText("");
+                }
+                else if(!isStringPulita(cognome)){
+                    Toast.makeText(RegistrazioneActivity.this, "Cognome non valido", Toast.LENGTH_SHORT).show();
+                    editTextCognome.setText("");
+                }
+                else if(!password.equals(conferma)){
+                    Toast.makeText(RegistrazioneActivity.this, "Le due password non corrispondono", Toast.LENGTH_SHORT).show();
+                    editTextPassword.setText("");
+                    confermPSW.setText("");
+                }
+                else{
                     // Creazione di un nuovo utente
                     Users nuovoUtente = new Users(nome, cognome, username, password);
 
@@ -53,14 +68,23 @@ public class RegistrazioneActivity extends AppCompatActivity {
                     Intent intent = new Intent(RegistrazioneActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
-                else{
-                    Toast.makeText(RegistrazioneActivity.this, "Le due password non corrispondono", Toast.LENGTH_SHORT).show();
-                    editTextPassword.setText("");
-                    confermPSW.setText("");
-                }
-
-
             }
         });
+    }
+
+    public static boolean isStringPulita(String input) {
+        // Verifica che la stringa non sia vuota
+        if (input.isEmpty()) {
+            return false;
+        }
+
+        // Definisci l'espressione regolare per controllare che la stringa contenga solo lettere minuscole e maiuscole
+        String regex = "^[a-zA-Z]+$";
+
+        // Compila il pattern regex
+        Pattern pattern = Pattern.compile(regex);
+
+        // Effettua il match della stringa con il pattern regex
+        return pattern.matcher(input).matches();
     }
 }
