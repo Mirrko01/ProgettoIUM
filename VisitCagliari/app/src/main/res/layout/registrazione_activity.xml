@@ -1,132 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RegistrazioneActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background_color"
+tools:context=".RegistrazioneActivity">
+
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_background"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="600dp"
-            android:orientation="vertical"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="#143F6B"
-            >
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Nome"
-                android:textSize="17dp"/>
-
-            <EditText
-                android:id="@+id/nome"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
-                android:hint="Inserisci il tuo nome"
-                android:textColorHint="@color/white"/>
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
 
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Cognome"
-                android:textSize="17dp" />
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo" />
 
-            <EditText
-                android:id="@+id/cognome"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
-                android:hint="Inserisci il tuo cognome"
-                android:textColorHint="@color/white" />
+        <TextView
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="COMPILA I CAMPI INSERENDO I TUOI DATI PER CREARE CORRETTAMENTE UN NUOVO ACCOUNT"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Nome:"
+            android:textSize="17dp" />
 
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Username"
-                android:textSize="17dp" />
-
-            <EditText
-                android:id="@+id/username"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
-                android:hint="Inserisci il tuo username"
-                android:textColorHint="@color/white" />
-
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Password"
-                android:textSize="17dp" />
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:hint="Inserisci il tuo nome"
+            android:textColorHint="@color/white" />
 
 
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Cognome:"
+            android:textSize="17dp" />
 
-            <EditText
-                android:inputType="textPassword"
-                android:id="@+id/password"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
-                android:hint="Inserisci la tua password"
-                android:textColorHint="@color/white" />
-
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:fontFamily="serif"
-                android:text="Conferma password"
-                android:textSize="17dp" />
+        <EditText
+            android:id="@+id/cognome"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:hint="Inserisci il tuo cognome"
+            android:textColorHint="@color/white" />
 
 
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Username:"
+            android:textSize="17dp" />
 
-            <EditText
-                android:inputType="textPassword"
-                android:id="@+id/confermaPassword"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:hint="Conferma la tua password"
-                android:textColorHint="@color/white" />
-
-            <Button
-                android:id="@+id/registrazioneButton"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:hint="Registrati"
-                android:textColorHint="@color/white"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:hint="Inserisci il tuo username"
+            android:textColorHint="@color/white" />
 
 
-        </LinearLayout>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Password:"
+            android:textSize="17dp" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:hint="Inserisci la tua password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Conferma password:"
+            android:textSize="17dp" />
+
+
+        <EditText
+            android:id="@+id/confermaPassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Inserisci nuovamente la password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/registrazioneButton"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Registrati"
+            android:textColorHint="@color/white" />
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
