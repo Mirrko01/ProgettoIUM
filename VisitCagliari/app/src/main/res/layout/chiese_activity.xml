@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color"
     tools:context=".Chiese">
 
     <LinearLayout
@@ -13,14 +14,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp">
+            android:layout_height="150dp">
 
 
-        <ImageView
+            <ImageView
                 android:id="@+id/logoImage"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/church"/>
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
 
         </LinearLayout>
 

@@ -5,6 +5,8 @@
     <color name="text_color">#3C3C3C</color> <!-- Grigio scuro per testo -->
     <color name="accent_color">#006666</color> <!-- Blu scuro per dettagli -->
     <color name="button_color">#CC6600</color> <!-- Ruggine -->
+    <color name="white">#FFFFFF</color> <!-- Ruggine -->
+
 
     <!-- Sfondi -->
     <drawable name="login_background">#bdb76b</drawable> <!-- Sfondo bianco -->

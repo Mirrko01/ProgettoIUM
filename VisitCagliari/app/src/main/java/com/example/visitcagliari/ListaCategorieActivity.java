@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ListaCategorieActivity extends AppCompatActivity {
 
-    ImageView churchBtn, museumBtn, restaurantBtn, parkBtn, monumentBtn, otherBtn, accountBtn;
+    ImageView churchBtn, museumBtn, parkBtn, monumentBtn, accountBtn;
 
     Button pianificaBtn;
 
@@ -22,12 +22,10 @@ public class ListaCategorieActivity extends AppCompatActivity {
 
         churchBtn = findViewById(R.id.chieseImg);
         museumBtn = findViewById(R.id.museumImg);
-        restaurantBtn = findViewById(R.id.restaurantImg);
         parkBtn = findViewById(R.id.parkImg);
         monumentBtn = findViewById(R.id.monumentImg);
-        //otherBtn = findViewById(R.id.otherImg);
         pianificaBtn = findViewById(R.id.pianifica);
-        accountBtn=findViewById(R.id.account);
+        //accountBtn=findViewById(R.id.account);
 
         churchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,13 +43,13 @@ public class ListaCategorieActivity extends AppCompatActivity {
             }
         });
 
-        restaurantBtn.setOnClickListener(new View.OnClickListener() {
+        /*restaurantBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ListaCategorieActivity.this, Ristoranti.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         parkBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,16 +84,12 @@ public class ListaCategorieActivity extends AppCompatActivity {
         });
 
 
-        accountBtn.setOnClickListener(new View.OnClickListener() {
+        /*accountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ListaCategorieActivity.this, DatiPersonali.class);
                 startActivity(intent);
             }
-        });
-
-
-
-
+        });*/
     }
 }
