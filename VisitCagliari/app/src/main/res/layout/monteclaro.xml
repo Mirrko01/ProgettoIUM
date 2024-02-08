@@ -15,23 +15,21 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <!-- Immagine in alto a sinistra -->
 
-        <!-- Area testuale in alto a destra -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:src="@drawable/bastione" />
+            android:src="@drawable/monteclaro" />
 
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:layout_margin="8dp"
-            android:text="BASTIONE DI SAINT REMY"/>
+            android:text="PARCO DI MONTECLARO"/>
 
         <TextView
             android:id="@+id/textView"
@@ -40,7 +38,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:textSize="12sp"
-            android:text="@string/bastioneDesc" />
+            android:text="@string/monteclaroDesc" />
     </LinearLayout>
 
     <LinearLayout

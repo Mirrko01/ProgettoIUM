@@ -27,7 +27,7 @@ public class Parchi extends AppCompatActivity {
         monteclaro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Parchi.this, Monumenti.class);
+                Intent intent = new Intent(Parchi.this, Monteclaro.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class Parchi extends AppCompatActivity {
         urpinu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Parchi.this, Monumenti.class);
+                Intent intent = new Intent(Parchi.this, Urpinu.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +43,7 @@ public class Parchi extends AppCompatActivity {
         terramaini.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Parchi.this, Monumenti.class);
+                Intent intent = new Intent(Parchi.this, Terramaini.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class Parchi extends AppCompatActivity {
         giardini.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Parchi.this, Monumenti.class);
+                Intent intent = new Intent(Parchi.this, Giardini.class);
                 startActivity(intent);
             }
         });

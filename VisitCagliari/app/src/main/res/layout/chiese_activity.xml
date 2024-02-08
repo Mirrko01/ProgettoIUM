@@ -136,7 +136,7 @@
                 android:id="@+id/nomeChiesa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="VERGINE DELLA SALUTE"
+                android:text="BASILICA DI SANTA CECILIA"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:gravity="start"/>
@@ -151,7 +151,7 @@
                 android:id="@+id/fotoChiesa"
                 android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:src="@drawable/verginedellasalute"/>
+                android:src="@drawable/vergine"/>
 
         </LinearLayout>
     </LinearLayout>

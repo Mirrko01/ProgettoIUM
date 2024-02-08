@@ -1,11 +1,63 @@
 <resources>
     <string name="app_name">VisitCagliari</string>
     <string name="bastioneDesc">Porta d’accesso dal quartiere di Villanova a quello fortificato di Castello, nel cuore della città vecchia, il bastione, che deve il nome al barone di Saint Remy, primo viceré piemontese, si affaccia su piazza Costituzione, all’incrocio tra due vie storiche della città È inconfondibilmente un simbolo di Cagliari, uno dei suoi complessi monumentali più maestosi e di maggior pregio, nonché prestigioso spazio espositivo.
+        La passeggiata coperta e la maestosa terrazza Umberto I furono progettate da Giuseppe Costa e Fulgenzio Setti, su un’idea di metà Ottocento dall’architetto Gaetano Cima, e costruite in stile classicheggiante tra 1896 e 1902 sulle antiche cortine difensive del circuito fortificato della città medievale. Il bastione di Saint Remy è il risultato di
+        spianamento e riutilizzo degli antichi bastioni dello Sperone e della Zecca, costruiti dagli spagnoli nella seconda metà del
+        Cinquecento.</string>
 
-La passeggiata coperta e la maestosa terrazza Umberto I furono progettate da Giuseppe Costa e Fulgenzio Setti, su un’idea di metà Ottocento dall’architetto Gaetano Cima, e costruite in stile classicheggiante tra 1896 e 1902 sulle antiche cortine difensive del circuito fortificato della città medievale. Il bastione di Saint Remy è il risultato di spianamento e riutilizzo degli antichi bastioni dello Sperone e della Zecca, costruiti dagli spagnoli nella seconda metà del Cinquecento.</string>
+    <string name="elefanteDesc">La torre dell\'elefante fu progettata dall’architetto Giovanni Capula agli inizi del XIV secolo e completata nel 1307.
+Fu costruita dai pisani che dominavano la città di Cagliari dalla metà del XIII secolo, per difendere gli accessi al Castello. Nel ‘600 e nel ‘700 vennero addossati alla torre nuovi edifici che ne nascosero in parte l’imponente struttura.
+La struttura presenta 17 feritoie che permettevano il controllo delle vie di accesso al Castello. Sulla sommità era presente una balconata lignea, lungo il perimetro della terrazza, di cui restano solo le 35 mensole di pietra su cui poggiava. Sull’esterno delle pareti si notano vari gruppi di stemmi, scolpiti nei blocchi delle mura in calcare di Bonaria, con le insegne dei castellani pisani. Sul lato sud, al di sopra dell’arco di ingresso, si trova la statua dell’elefante, simbolo della torre. Il nome della torre deriva probabilmente dall’antico nome dell’attuale Via Stretta, chiamata in epoca pisana Ruga Leofantis.</string>
+
+    <string name="castelloDesc">Fortezza di età giudicale che si erge su uno dei sette colli di Cagliari, è uno dei monumenti più significativi del capoluogo della Sardegna, oggi adibito a museo.
+Cagliari sorge su sette colli. Sopra quello di san Michele pare che i romani avessero eretto un tempio al dio Esculapio. In età bizantina il culto pagano per il protettore della medicina fu sostituito da quello cristiano per san Michele. Perciò non è una caso che in cima al colle, al termine di una serie di tornanti tra bianche rocce tufacee e il verde di agavi ed essenze mediterranee, sorgessero un monastero e poi una chiesa. Oggi lassù svetta un castello medioevale, che domina la città, contornato da un parco. Un tempo era isolato, oggi è parte del quartiere di is Mirrionis. Dalla vetta lo sguardo si allarga a 360 gradi su tutto il capoluogo: le fortificazioni del quartiere Castello, il porto, il Poetto, la Sella del Diavolo, la laguna di Santa Gilla.</string>
 
 
 
+    <string name="cristinaDesc">La porta fu realizzata nel 1825 su progetto del conte Carlo Boyl di Putifigari, che si occupò nello stesso anno anche della nuova porta di accesso al Regio Arsenale e della risistemazione della piazza antistante. Porta Cristina deve il suo nome a Maria Cristina di Borbone, moglie del re Carlo Felice. Fu realizzata in stile neoclassico, utilizzando come materiale da costruzione il calcare delle cave di Bonaria. Le strutture della porta hanno inglobato la torre Passarina, una delle torri minori del sistema di fortificazioni di età pisana. Il quartiere di Castello era, infatti, protetto da un impianto difensivo fatto di alte mura verticali intervallate da 3 torri principali a pianta quadrangolare (la torre di San Pancrazio, dell’Elefante e dell’Aquila) e da alcune torri più piccole a pianta circolare.</string>
+
+
+    <string name="monteclaroDesc">
+Il Parco di Monte Claro è un parco urbano situato alle pendici del colle omonimo, a Cagliari, tra i quartieri di Is Mirrionis, Fonsarda e la municipalità di Pirri. Con i suoi 25 ettari di superficie è uno degli spazi verdi più estesi del capoluogo, nonché uno dei più frequentati.
+Nato a seguito della riqualificazione della colonia agricola dell’ex Ospedale Psichiatrico Provinciale di Cagliari, iniziata nel 1995, il parco è stato aperto al pubblico nel 1997 in modo parziale, e nel 2001 nel suo assetto attuale.
+I lavori, finanziati dall’allora Provincia di Cagliari, hanno riguardato la ripopolazione della vegetazione con alberi, arbusti tipici della macchia mediterranea, prati e siepi. Un piccolo lago ospita tartarughe d’acqua, anatre, oche e cigni. La fauna del Parco include una colonia felina.</string>
+
+
+    <string name="urpinuDesc">Il Parco di Monte Urpinu è situato sull’omonimo colle e si estende per oltre trentadue ettari nel suo complesso.
+Originariamente occupato da una forestazione naturale, il Monte Urpinu vide il primo intervento a metà circa del 1800, su volontà del barone Sanjust di Teulada, allora proprietario dell’area, con la messa a dimora di numerosi esemplari di pino d’Aleppo.
+Sono presenti diversi specchi d’acqua artificiali popolati da tartarughe, anatre e cigni, mentre nelle aree circostanti è possibile incontrare esemplari di oche e galline, oltre agli ormai tradizionali pavoni, simbolo per eccellenza del parco nell’immaginario cittadino.
+L’allestimento verde è estremamente ricco in quantità e qualità; pini d’Aleppo, olivastri, lecci, lentischi, carrubi, alaterni, alimi, filliree, bagolari, pini delle Canarie, per citare le specie più importanti.</string>
+
+
+    <string name="giardiniDesc">Con quasi due ettari di estensione, i Giardini Pubblici costituiscono un importante polmone verde cittadino, con un’ultracentenaria storia alle spalle.
+I giardini furono realizzati nel XIX secolo, riqualificando un’area abbandonata e incolta antistante l’allora Regia Polveriera: l’edificio militare esplose nel 1822 e fu ricostruito nel 1828 su progetto dall’architetto Carlo Boyl di Putifigari, in stile neo-classico.
+Nel 1840 l’area fu acquistata dal Comune di Cagliari e da allora si susseguirono numerosi interventi. Dal 1928 al 1933, su progetto affidato a Ubaldo Badas, ci fu la ristrutturazione degli spazi interni della Regia Polveriera e la nuova destinazione a Galleria Comunale d’Arte, oltre che l’apertura dell’ingresso principale su Viale Regina Elena.
+È ricco e di pregio l’allestimento verde presente, che si sviluppa ai lati del lungo viale che divide longitudinalmente i giardini, nel quale spicca la presenza di un monumentale ficus magnolioide ultracentenario, oltre a numerosi esemplari adulti di jacaranda, palma, leccio e ficus.</string>
+
+
+    <string name="terramainiDesc">Il Parco di Terramaini si trova nella zona Nord di Cagliari ed occupa una superficie di circa undici ettari, che costeggia il canale del Riu Saliu nel lato est.
+L’area si sviluppa su una superficie pianeggiante, caratterizzata da ampi prati, nei quali trovano collocazione aree giochi per bambini, aree sportive con numerosi attrezzi e aree per attività ricreative. È presente inoltre un piccolo teatro per rappresentazioni culturali e/o incontri.
+Lungo il perimetro sono presenti comode sedute in pietra, che cingono il camminamento pedonale.
+All’interno del parco è presente un laghetto artificiale cinto sul lato ovest da una passerella in legno e circondato da folti canneti.
+Sono numerose le specie botaniche presenti, tipiche della macchia mediterranea, come mirto, carrubo, ulivo, rosmarino, fillirea, corbezzolo, pino e lentisco, ma non mancano le specie esotiche quali palme, ficus e callistemon.
+</string>
+
+
+    <string name="bonariaDesc">Nel capoluogo dell’Isola, in cima a un famoso colle, si trova il santuario cattolico più importante della Sardegna, dal passato illustre e un presente di grande devozione
+La candida facciata si erge su un luminoso piazzale, mentre infiniti scalini scendono dal colle sin quasi al mare de su Siccu, uno dei porti turistici di Cagliari. Nostra Signora di Bonaria, dopo secoli di rifacimenti, oggi, col santuario trecentesco alla sua sinistra, è il tempio cristiano per eccellenza dell’Isola. La leggenda narra che nel 1370, nel mezzo di una tempesta, una nave si liberò del carico. La bufera si placò appena gettata in mare una pesante cassa, che approdò sulla riva di fronte al colle di Bonaria. Dentro c’era una statua lignea: la Madonna con in braccio il bambino e in mano una candela, rimasta prodigiosamente accesa. In tutta la Sardegna si diffuse la devozione per la statua, che oggi è custodita nell’altare del piccolo santuario, primo esempio sardo di architettura gotico-catalana, costruito da Alfonso d’Aragona (1324) durante l’assedio ai pisani.</string>
+
+
+    <string name="efisioDesc">Celebre e importante edificio di culto di Cagliari, legato al santo più venerato nel capoluogo dell’Isola, una chiesetta medioevale da cui parte la festa della Sardegna
+Confusa tra stradine strette, nel cuore di Stampace, quartiere medioevale di Cagliari, sorge la chiesa da dove ogni primo maggio parte una delle celebrazioni religiose più antiche in Italia e più coinvolgenti dell’Isola, la Festa di sant’Efisio. L’edificio originario è duecentesco, costruito sopra una grotta che si apre nella roccia calcarea profonda nove metri, ritenuta per devozione popolare la prigione dove Efisio fu rinchiuso prima di essere martirizzato e decapitato sulla spiaggia di Nora (303 d.C.). A fine XVIII secolo alcuni -interventi conferirono alla chiesetta l’aspetto attuale, proprio del settecentesco stile barocchetto piemontese. La ricostruzione si concluse nel 1782.</string>
+
+
+    <string name="saturninoDesc">Nel quartiere di Villanova del capoluogo della Sardegna, vicino a cimitero monumentale e basilica di Nostra Signora di Bonaria, sorge il monumento paleocristiano più antico dell’Isola.
+Fede e mistero trasudano dalle sue bianche candide pietre, che stridono con la tragica storia del giovanissimo Saturnino, decapitato nel 304 d.C. per non aver rinnegato la fede cristiana. La basilica dove fu sepolto il martire, patrono di Cagliari, conserva le sembianze originali di martyrium. È la più antica chiesa del capoluogo, fu costruita in stile bizantino-protoromanico tra V e VI secolo: insieme alla vasta necropoli, sopra cui è sorta, è uno dei più importanti complessi paleocristiani del Mediterraneo.
+Dell’antichissimo edificio a croce greca, con quattro bracci uguali e un corpo centrale cupolato, noterai la cupola intatta e i resti dell’abside. Dopo esser stato rapito dalla quiete dell’interno, potrai ammirare la finezza delle decorazioni esterne della navata centrale e, nel braccio orientale, dell’unica porta romanica.</string>
+
+
+    <string name="vergineDesc">Nel cuore del capoluogo sardo c’è il monumento più importante e famoso del quartiere di Castello, nonché un pezzo di storia: è il duomo di Cagliari, eretto nel XIII secolo e ristrutturato in varie fasi, luogo di culto e centro della vita politica
+Arrivando a Cagliari in aereo, è impossibile non notare la sua cupola. La cattedrale di Santa Maria, l’edificio di culto simbolo della città insieme alla **basilica di Bonaria**, svetta sul quartiere di **Castello** con una mole imponente, affiancata a **Palazzo Regio** e all’antico Palazzo di città. La chiesa, lunga 35 metri, larga 34 e alta 32, fu costruita in forme gotico-romaniche. Se ne ha notizia dal 1255: era la cattedrale con patrona santa Cecilia (poi fu intitolata a Santa Maria). Tra XIII e XIV secolo i pisani la ampliarono, ma la veste attuale è il risultato di interventi catalano-aragonesi durati quattro secoli. Con un’appendice a inizio 1900: la facciata barocca in marmo risalente al 1704, ispirata alle cattedrali di Lucca e Pisa.</string>
     <string-array name="transportation_options">
         <item>A piedi</item>
         <item>In macchina</item>

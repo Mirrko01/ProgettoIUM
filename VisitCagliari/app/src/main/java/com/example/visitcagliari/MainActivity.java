@@ -52,9 +52,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Login riuscito", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, ListaCategorieActivity.class);
                     startActivity(intent);
-                } else {
-                    // Login fallito
-                    Toast.makeText(MainActivity.this, "Credenziali non valide", Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -35,7 +35,7 @@ public class Monumenti extends AppCompatActivity {
         elefante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Monumenti.this, Bastione.class);
+                Intent intent = new Intent(Monumenti.this, Elefante.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +43,7 @@ public class Monumenti extends AppCompatActivity {
         castello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Monumenti.this, Bastione.class);
+                Intent intent = new Intent(Monumenti.this, Castello.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class Monumenti extends AppCompatActivity {
         cristina.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Monumenti.this, Bastione.class);
+                Intent intent = new Intent(Monumenti.this, Cristina.class);
                 startActivity(intent);
             }
         });
