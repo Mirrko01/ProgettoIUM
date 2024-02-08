@@ -8,53 +8,57 @@
     android:orientation="vertical"
     android:background="@color/background_color">
 
+    <!-- Sezione dell'immagine e descrizione -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="522dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_margin="10dp"
         android:orientation="vertical">
 
         <!-- Immagine in alto a sinistra -->
-
-        <!-- Area testuale in alto a destra -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/bastione" />
 
-        <TextView
-            android:id="@+id/name"
+        <!-- Testo e descrizione -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:layout_margin="8dp"
-            android:text="BASTIONE DI SAINT REMY"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:textSize="12sp"
-            android:text="@string/bastioneDesc" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BASTIONE DI SAINT REMY"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bastioneDesc"
+                android:textSize="13.1sp" />
+        </LinearLayout>
     </LinearLayout>
 
+    <!-- Mappa -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_margin="7dp"
-        >
+        android:layout_margin="7dp">
 
         <fragment
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             tools:context=".Bastione" />
 
     </LinearLayout>
