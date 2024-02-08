@@ -23,7 +23,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-
         <ImageView
             android:id="@+id/logoImage"
             android:layout_width="match_parent"
@@ -56,6 +55,7 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/edittext_background"
             android:hint="Inserisci il tuo username"
+            android:minHeight="48dp"
             android:padding="10dp" />
 
         <TextView
@@ -75,6 +75,7 @@
             android:background="@drawable/edittext_background"
             android:hint="Inserisci la tua password"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:padding="10dp" />
 
         <Button
@@ -85,6 +86,7 @@
             android:background="@drawable/button_background"
             android:padding="12dp"
             android:text="Login"
+            android:textColor="#5D4037"
             android:textSize="18sp" />
 
 
@@ -96,6 +98,7 @@
             android:background="@drawable/button_background"
             android:padding="12dp"
             android:text="Registrati"
+            android:textColor="#5D4037"
             android:textSize="18sp" />
 
         <Button
@@ -105,6 +108,7 @@
             android:background="@drawable/button_background"
             android:padding="12dp"
             android:text="Mappa"
+            android:textColor="#5D4037"
             android:textSize="18sp" />
 
     </LinearLayout>

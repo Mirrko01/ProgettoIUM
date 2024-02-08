@@ -58,6 +58,25 @@ Dell’antichissimo edificio a croce greca, con quattro bracci uguali e un corpo
 
     <string name="vergineDesc">Nel cuore del capoluogo sardo c’è il monumento più importante e famoso del quartiere di Castello, nonché un pezzo di storia: è il duomo di Cagliari, eretto nel XIII secolo e ristrutturato in varie fasi, luogo di culto e centro della vita politica
 Arrivando a Cagliari in aereo, è impossibile non notare la sua cupola. La cattedrale di Santa Maria, l’edificio di culto simbolo della città insieme alla **basilica di Bonaria**, svetta sul quartiere di **Castello** con una mole imponente, affiancata a **Palazzo Regio** e all’antico Palazzo di città. La chiesa, lunga 35 metri, larga 34 e alta 32, fu costruita in forme gotico-romaniche. Se ne ha notizia dal 1255: era la cattedrale con patrona santa Cecilia (poi fu intitolata a Santa Maria). Tra XIII e XIV secolo i pisani la ampliarono, ma la veste attuale è il risultato di interventi catalano-aragonesi durati quattro secoli. Con un’appendice a inizio 1900: la facciata barocca in marmo risalente al 1704, ispirata alle cattedrali di Lucca e Pisa.</string>
+
+    <string name="archeologicoDesc">La nascita del museo archeologico di Cagliari risale al 1800, quando il Viceré Carlo Felice, accogliendo la proposta del Cavaliere Lodovico Baylle, fece allestire in una sala del palazzo Viceregio il Gabinetto di Archeologia e Storia naturale affidato alla cura del Cavaliere Leonardo De Prunner. Il Museo era allora concepito come una wunderkammer, ovvero una stanza delle meraviglie dove mettere insieme oggetti unici, di grande pregio e particolari. Grazie al grande lavoro di raccolta di Baylle e de Prunner  la collezione del Gabinetto crebbe sempre di più, arricchendosi di oggetti di antichità, minerali e animali. Nel 1802 la collezione, evento straordinario per l’epoca, venne aperta al pubblico.
+Gli spazi iniziali dedicati ai reperti archeologici zoologici e mineralogici vennero ampliati nel 1857. La collezione proseguì la sua espansione grazie alle numerose e importanti donazioni e alle nuove campagne di scavo.</string>
+
+
+    <string name="cittadellaDesc">Il maggior polo museale di Cagliari e di tutta la Sardegna che ti permette di viaggiare fra un tesoro di reperti archeologici, opere pittoriche e arte orientale
+
+Un’immersione in archeologia, arte e storia, alternata a indimenticabili scorci su Cagliari e golfo degli Angeli. Nel quartiere Castello, tra Porta Cristina e piazza Indipendenza, a pochi passi dalla passeggiata di Buon Cammino e vicino all’Anfiteatro romano, sorge l’antica sede del regio arsenale: dal 1979, dopo un lungo restauro, è diventata la Cittadella dei musei. Sorta su iniziativa dell’Università di Cagliari per ampliare museo archeologico e pinacoteca, divenne il maggior complesso museale isolano. L’area dove sorge, già ‘vissuta’ nell’Antichità, in età pisana era fuori dalle mura, separata da un fossato e collegata da un ponte levatoio.</string>
+
+
+    <string name="pinacotecaDesc">La Pinacoteca Nazionale di Cagliari, situata all’interno del complesso museale della Cittadella dei Musei, nasce sulla preesistente struttura del Regio Arsenale.
+Dal punto di vista architettonico l’edificio rappresenta un interessante connubio tra le antiche mura spagnole, progettate da Rocco Capellino ed ampliate da Giorgio e Jacopo Palearo nel XVI secolo.
+Il primo nucleo della collezione pittorica si formò nel XIX secolo quando, a seguito della soppressione degli enti ecclesiastici nel 1866 confluirono nel patrimonio dello Stato numerosi dipinti. All’inizio del Novecento nuove acquisizioni hanno arricchito la Pinacoteca di una interessante e bella collezione etnografica (tessuti, splendidi gioielli sardi, arredi, ceramiche e armi), che viene esposta a rotazione. Dal 1919, inoltre, fa parte della collezione uno straordinario acquamanile a forma di volatile, realizzato nel XII secolo da un artista di cultura bizantina, raro pezzo di scultura bronzea simile, per fattura e decorazione, all’esemplare “gemello” del Museo del Louvre.</string>
+
+
+    <string name="galleriaDesc">L\'edificio, un tempo sede della polveriera regia, è stato costruito alla fine del XVIII secolo; la facciata in stile neoclassico, realizzata su progetto di Carlo Boyl di Putifigari, è datata al 1828. Ristrutturato dal progettista Ubaldo Badas, è diventato Museo Civico nel 1933.
+
+Il Museo attualmente ospita la Collezione Ingrao, esposizione permanente costituita dalle opere dei più grandi maestri italiani del Novecento, da Umberto Boccioni a Giorgio Morandi, da Filippo De Pisis a Mario Mafai, le sculture di Francesco Ciusa.</string>
+
     <string-array name="transportation_options">
         <item>A piedi</item>
         <item>In macchina</item>

@@ -27,7 +27,7 @@ public class Musei extends AppCompatActivity {
         archeologico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Musei.this, Monumenti.class);
+                Intent intent = new Intent(Musei.this, Archeologico.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class Musei extends AppCompatActivity {
         pinacoteca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Musei.this, Monumenti.class);
+                Intent intent = new Intent(Musei.this, Pinacoteca.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +43,7 @@ public class Musei extends AppCompatActivity {
         cittadella.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Musei.this, Monumenti.class);
+                Intent intent = new Intent(Musei.this, Cittadella.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class Musei extends AppCompatActivity {
         galleria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Musei.this, Monumenti.class);
+                Intent intent = new Intent(Musei.this, Galleria.class);
                 startActivity(intent);
             }
         });
