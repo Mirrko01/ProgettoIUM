@@ -7,6 +7,7 @@
     android:background="@color/background_color"
     tools:context=".ListaCategorieActivity">
 
+
     <LinearLayout
         app:layout_constraintBottom_toTopOf="@id/grid"
         android:id="@+id/linearLayout"

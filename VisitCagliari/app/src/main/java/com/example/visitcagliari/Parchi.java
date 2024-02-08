@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
@@ -12,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Parchi extends AppCompatActivity {
 
     LinearLayout monteclaro, urpinu, terramaini,giardini;
-
+    ImageView undo;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +23,15 @@ public class Parchi extends AppCompatActivity {
         urpinu=findViewById(R.id.urpinu);
         terramaini=findViewById(R.id.terramaini);
         giardini=findViewById(R.id.giardini);
+        undo=findViewById(R.id.undo);
 
-
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Parchi.this, ListaCategorieActivity.class);
+                startActivity(intent);
+            }
+        });
         monteclaro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
@@ -13,6 +14,7 @@ public class Musei extends AppCompatActivity {
 
     LinearLayout archeologico, pinacoteca, cittadella,galleria;
 
+    ImageView undo;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +24,15 @@ public class Musei extends AppCompatActivity {
         pinacoteca=findViewById(R.id.pinacoteca);
         cittadella=findViewById(R.id.cittadella);
         galleria=findViewById(R.id.galleria);
+        undo=findViewById(R.id.undo);
 
-
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Musei.this, ListaCategorieActivity.class);
+                startActivity(intent);
+            }
+        });
         archeologico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

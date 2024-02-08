@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public Users prova=new Users("Mirko","Contini","mirko","mirko");
     public static Users loggedUser;
     private EditText editTextUsername, editTextPassword;
+    ImageView undo;
     TextView redirectRegistrazione;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +32,20 @@ public class MainActivity extends AppCompatActivity {
         editTextUsername = findViewById(R.id.username);
         editTextPassword = findViewById(R.id.password);
         redirectRegistrazione=findViewById(R.id.registrazioneRedirect);
+        undo=findViewById(R.id.undo);
 
         redirectRegistrazione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RegistrazioneActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

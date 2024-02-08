@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Chiese extends AppCompatActivity {
 
     LinearLayout bonaria, saturnino, efisio,vergine;
+    ImageView undo;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,6 +24,15 @@ public class Chiese extends AppCompatActivity {
         saturnino=findViewById(R.id.saturnino);
         efisio=findViewById(R.id.efisio);
         vergine=findViewById(R.id.vergine);
+        undo=findViewById(R.id.undo);
+
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Chiese.this, ListaCategorieActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         bonaria.setOnClickListener(new View.OnClickListener() {
