@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Pianifica extends AppCompatActivity {
 
-    private EditText editTextDistance;
+    private Spinner spinnerTime;
     private Spinner spinnerTransportation;
     private Button buttonSubmit;
 
@@ -24,9 +24,18 @@ public class Pianifica extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pianifica_activity);
 
-        editTextDistance = findViewById(R.id.editTextDistance);
+        spinnerTime = findViewById(R.id.spinnerTime);
         spinnerTransportation = findViewById(R.id.spinnerTransportation);
         buttonSubmit = findViewById(R.id.buttonSubmit);
+
+        // Populating spinner with transportation options
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(
+                this,
+                R.array.time_options,
+                android.R.layout.simple_spinner_item
+        );
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerTime.setAdapter(adapter1);
 
         // Populating spinner with transportation options
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -47,35 +56,54 @@ public class Pianifica extends AppCompatActivity {
     }
 
     private void calculateResult() {
-        // Get the entered distance
-        String distanceStr = editTextDistance.getText().toString();
+        Intent intent;
 
-        if (!distanceStr.isEmpty()) {
-            // Convert distance to double
-            double distance = Double.parseDouble(distanceStr);
+// Ottieni il valore selezionato dallo spinner del trasporto
+        Spinner spinnerTransportation = findViewById(R.id.spinnerTransportation);
+        String transportation = spinnerTransportation.getSelectedItem().toString();
 
-            // Get the selected transportation option
-            String transportation = spinnerTransportation.getSelectedItem().toString();
+// Ottieni il valore selezionato dallo spinner del tempo
+        Spinner spinnerTime = findViewById(R.id.spinnerTime);
+        String timeString = spinnerTime.getSelectedItem().toString(); // Ottieni il tempo come stringa
 
-            Intent intent;
-            if ("A piedi".equals(transportation)) {
-                intent = new Intent(Pianifica.this, Tour1.class);
-            } else if ("In bus".equals(transportation)) {
-                intent = new Intent(Pianifica.this, Tour2.class);
-            } else if ("In bici".equals(transportation)) {
-                intent = new Intent(Pianifica.this, Tour3.class);
-            } else {
-                intent = new Intent(Pianifica.this, Tour4.class);
-            }
-
-            // Pass data to the next activity if needed
-            intent.putExtra("distance", distance);
-
-            // Start the new activity
-            startActivity(intent);
-        } else {
-            // Display an error message if distance is not entered
-            Toast.makeText(Pianifica.this, "Inserisci la distanza", Toast.LENGTH_SHORT).show();
+// Estrai il tempo effettivo dalla stringa
+        int time;
+        if (timeString.startsWith("Meno di")) {
+            time = 30; // Se è "Meno di 30 minuti", imposta il tempo a 30 minuti
+        } else if (timeString.startsWith("Da 30 minuti")) {
+            time = 45; // Se è "Da 30 minuti a 1 ora", imposta il tempo a 45 minuti (la media del range)
+        } else  {
+            time = 90; // Se è "Da 1 a 2 ore", imposta il tempo a 90 minuti (la media del range)
         }
+
+// Esegui il controllo del trasporto e apri l'intento corrispondente
+        if ("A piedi".equals(transportation)) {
+            if (time == 30) {
+                intent = new Intent(Pianifica.this, Tour1.class); // A piedi e meno di 30 minuti
+            } else if (time == 45) {
+                intent = new Intent(Pianifica.this, Tour2.class); // A piedi e da 30 minuti a 1 ora
+            } else {
+                intent = new Intent(Pianifica.this, Tour3.class); // A piedi e da 1 a 2 ore
+            }
+        } else if ("In bus".equals(transportation)) {
+            if (time == 30) {
+                intent = new Intent(Pianifica.this, Tour1.class); // A piedi e meno di 30 minuti
+            } else if (time == 45) {
+                intent = new Intent(Pianifica.this, Tour2.class); // A piedi e da 30 minuti a 1 ora
+            } else {
+                intent = new Intent(Pianifica.this, Tour3.class); // A piedi e da 1 a 2 ore
+            }
+        } else  {
+            if (time == 30) {
+                intent = new Intent(Pianifica.this, Tour1.class); // A piedi e meno di 30 minuti
+            } else if (time == 45) {
+                intent = new Intent(Pianifica.this, Tour2.class); // A piedi e da 30 minuti a 1 ora
+            } else {
+                intent = new Intent(Pianifica.this, Tour3.class); // A piedi e da 1 a 2 ore
+            }
+        }
+
+// Avvia l'attività corrispondente
+        startActivity(intent);
     }
 }

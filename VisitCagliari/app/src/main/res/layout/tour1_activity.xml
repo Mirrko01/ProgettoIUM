@@ -19,7 +19,7 @@ android:layout_height="match_parent">
 
     <!-- Card 1 -->
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/apriItin"
+        android:id="@+id/apriItin1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="16dp"
@@ -35,7 +35,7 @@ android:layout_height="match_parent">
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A piedi 1"
+                android:text="Giro a Castello"
                 android:textSize="18sp"/>
 
             <!-- Add other content for the card as needed -->
@@ -45,6 +45,7 @@ android:layout_height="match_parent">
 
     <!-- Card 2 -->
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/apriItin2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="16dp"
@@ -60,7 +61,7 @@ android:layout_height="match_parent">
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A piedi 2"
+                android:text="Tour ristretto chiese di Cagliari"
                 android:textSize="18sp"/>
 
             <!-- Add other content for the card as needed -->

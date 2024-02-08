@@ -11,34 +11,39 @@ import com.google.android.material.card.MaterialCardView;
 
 public class Tour1 extends AppCompatActivity {
     MaterialCardView card1;
+    MaterialCardView card2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tour1_activity);
 
         // Trova le card
-        MaterialCardView card1 = findViewById(R.id.apriItin);
+         card1 = findViewById(R.id.apriItin1);
+         card2 = findViewById(R.id.apriItin2);
 
         // Aggiungi il click listener alle card
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDirections();
+                openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");
+            }
+        });
+
+        card2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");
             }
         });
 
     }
 
 
-    private void openDirections() {
+    private void openDirections(String url) {
         // Sostituisci "LA_TUA_API_KEY" con la tua chiave API di Google Maps
         String apiKey = "AIzaSyD2XQ_-PJvrkNClNwzM5ikH463cxATdH8U";
-
-        // Esempio di itinerario salvato (URL generato da Google Maps)
-        String savedDirectionsUrl = "https://maps.app.goo.gl/XtcjwTgRXzb38eQMA";
-
         // Apri l'itinerario in una nuova finestra del browser
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(savedDirectionsUrl));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
     }
 }

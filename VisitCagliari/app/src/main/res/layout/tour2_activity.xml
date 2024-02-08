@@ -18,6 +18,7 @@ android:layout_height="match_parent">
 
     <!-- Card 1 -->
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/apriItin2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="16dp"
@@ -33,7 +34,7 @@ android:layout_height="match_parent">
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="In bus 1"
+                android:text="Tour storico di Cagliari"
                 android:textSize="18sp"/>
 
             <!-- Add other content for the card as needed -->

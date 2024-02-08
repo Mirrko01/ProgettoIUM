@@ -13,27 +13,22 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.location.LocationRequest;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
-import java.util.List;
 
 public class ItinerarioActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private FusedLocationProviderClient fusedLocationProviderClient;
     private Button btnOpenDirections;
+    private LocationRequest locationRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +74,7 @@ public class ItinerarioActivity extends FragmentActivity implements OnMapReadyCa
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        fusedLocationProviderClient.getLastLocation()
+        fusedLocationProviderClient.getCurrentLocation(50000000,null)
                 .addOnSuccessListener(this, location -> {
                     if (location != null) {
                         // Ottieni la posizione corrente
