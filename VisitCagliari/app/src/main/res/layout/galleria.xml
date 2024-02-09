@@ -19,10 +19,10 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:src="@drawable/galleriacomunale"
-            android:scaleType="centerInside" />
+            android:layout_height="300dp"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/galleriacomunale" />
 
 
         <!-- Nome della galleria -->
@@ -46,7 +46,7 @@
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
             android:text="@string/galleriaDesc"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <!-- Mappa -->
