@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +13,8 @@ import com.google.android.material.card.MaterialCardView;
 public class Tour2 extends AppCompatActivity {
     MaterialCardView card1;
     MaterialCardView card2;
+
+    ImageView undo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +23,8 @@ public class Tour2 extends AppCompatActivity {
         // Trova le card
         card1 = findViewById(R.id.tour2_1);
         card2 = findViewById(R.id.tour2_2);
+
+        undo= findViewById(R.id.undo);
 
         // Aggiungi il click listener alle card
         card1.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +38,14 @@ public class Tour2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");
+            }
+        });
+
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tour2.this, Pianifica.class);
+                startActivity(intent);
             }
         });
 
