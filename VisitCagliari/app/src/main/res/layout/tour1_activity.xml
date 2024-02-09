@@ -89,7 +89,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tour ristretto chiese di Cagliari"
+                        android:text="Tour ristretto delle Chiese di Cagliari"
                         android:textSize="18sp"
                         android:textColor="@android:color/black" />
 

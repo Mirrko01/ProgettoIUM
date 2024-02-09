@@ -46,6 +46,7 @@
 
             <!-- Card 1 -->
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tour3_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
@@ -61,7 +62,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="In bici 1"
+                        android:text="Cagliari a piedi"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->
@@ -71,6 +72,7 @@
 
             <!-- Card 2 -->
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tour3_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
@@ -86,7 +88,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Musei di Cagliari"
+                        android:text="Tour completo delle Chiese di Cagliari"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->

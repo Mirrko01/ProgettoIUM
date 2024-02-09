@@ -87,19 +87,19 @@ public class Pianifica extends AppCompatActivity {
             }
         } else if ("In bus".equals(transportation)) {
             if (time == 30) {
-                intent = new Intent(Pianifica.this, Tour1.class); // A piedi e meno di 30 minuti
+                intent = new Intent(Pianifica.this, Tour4.class); // A piedi e meno di 30 minuti
             } else if (time == 45) {
-                intent = new Intent(Pianifica.this, Tour2.class); // A piedi e da 30 minuti a 1 ora
+                intent = new Intent(Pianifica.this, Tour5.class); // A piedi e da 30 minuti a 1 ora
             } else {
-                intent = new Intent(Pianifica.this, Tour3.class); // A piedi e da 1 a 2 ore
+                intent = new Intent(Pianifica.this, Tour6.class); // A piedi e da 1 a 2 ore
             }
         } else  {
             if (time == 30) {
-                intent = new Intent(Pianifica.this, Tour1.class); // A piedi e meno di 30 minuti
+                intent = new Intent(Pianifica.this, Tour7.class); // A piedi e meno di 30 minuti
             } else if (time == 45) {
-                intent = new Intent(Pianifica.this, Tour2.class); // A piedi e da 30 minuti a 1 ora
+                intent = new Intent(Pianifica.this, Tour8.class); // A piedi e da 30 minuti a 1 ora
             } else {
-                intent = new Intent(Pianifica.this, Tour3.class); // A piedi e da 1 a 2 ore
+                intent = new Intent(Pianifica.this, Tour9.class); // A piedi e da 1 a 2 ore
             }
         }
 

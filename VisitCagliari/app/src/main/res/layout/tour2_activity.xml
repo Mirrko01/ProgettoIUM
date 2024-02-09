@@ -44,7 +44,7 @@
 
             <!-- Card 1 -->
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/apriItin2"
+                android:id="@+id/tour2_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
@@ -60,7 +60,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tour storico di Cagliari"
+                        android:text="Tour centro storico di Cagliari"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->
@@ -70,6 +70,7 @@
 
             <!-- Card 2 -->
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tour2_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
@@ -85,7 +86,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="In bus 2"
+                        android:text="Tour intermedio delle Chiese di Cagliari"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->
