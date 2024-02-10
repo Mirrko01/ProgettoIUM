@@ -62,7 +62,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cagliari a piedi"
+                        android:text="Giro completo di Castello"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->
@@ -88,7 +88,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tour completo delle Chiese di Cagliari"
+                        android:text="Giro dei musei"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->

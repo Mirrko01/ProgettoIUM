@@ -62,7 +62,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Giro a Castello"
+                        android:text="Giro breve a Castello"
                         android:textSize="18sp"
                         android:textColor="@android:color/black" />
 
@@ -89,7 +89,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tour ristretto delle Chiese di Cagliari"
+                        android:text="Giro breve delle Chiese di Castello"
                         android:textSize="18sp"
                         android:textColor="@android:color/black" />
 

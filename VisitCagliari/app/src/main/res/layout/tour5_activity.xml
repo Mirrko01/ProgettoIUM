@@ -37,20 +37,67 @@
         android:layout_below="@id/toolbar">
 
         <LinearLayout
+
+            android:id="@+id/cardContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:padding="16dp">
 
-            <TextView
-                android:id="@+id/messageTextView"
-                android:layout_width="wrap_content"
+            <!-- Card 1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tour5_1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ci dispiace, non abbiamo tour disponibili al momento che rispecchino le preferenze indicate"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:padding="16dp"/>
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Giro intermedio a Castello"
+                        android:textSize="18sp"/>
+
+                    <!-- Add other content for the card as needed -->
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tour5_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Giro intermedio delle Chiese di Castello"
+                        android:textSize="18sp"/>
+
+                    <!-- Add other content for the card as needed -->
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Add more cards as needed -->
+
         </LinearLayout>
     </ScrollView>
 

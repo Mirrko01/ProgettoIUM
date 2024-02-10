@@ -66,6 +66,9 @@ public class Pianifica extends AppCompatActivity {
         Spinner spinnerTime = findViewById(R.id.spinnerTime);
         String timeString = spinnerTime.getSelectedItem().toString(); // Ottieni il tempo come stringa
 
+        Spinner spinnerPosition = findViewById(R.id.spinnerPosition);
+        String position = spinnerTime.getSelectedItem().toString(); // Ottieni il tempo come stringa
+
 // Estrai il tempo effettivo dalla stringa
         int time;
         if (timeString.startsWith("Meno di")) {
@@ -77,29 +80,77 @@ public class Pianifica extends AppCompatActivity {
         }
 
 // Esegui il controllo del trasporto e apri l'intento corrispondente
-        if ("A piedi".equals(transportation)) {
-            if (time == 30) {
-                intent = new Intent(Pianifica.this, Tour1.class); // A piedi e meno di 30 minuti
-            } else if (time == 45) {
-                intent = new Intent(Pianifica.this, Tour2.class); // A piedi e da 30 minuti a 1 ora
-            } else {
-                intent = new Intent(Pianifica.this, Tour3.class); // A piedi e da 1 a 2 ore
+        if (position.equals("Zona rossa")) {
+            if ("A piedi".equals(transportation)) {
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour1.class); //GIRO BREVE A CASTELLO, GIRO BREVE DELLE CHIESE DI CASTELLO
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour2.class); // GIRO MEDIO A CASTELLO, GIRO MEDIO DELLE CHIESE DI CASTELLO
+                } else {
+                    intent = new Intent(Pianifica.this, Tour3.class); //GIRO COMPLETO DI CASTELLO, GIRO DEI MUSEI
+                }
+            } else{
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour4.class); // GIRO BREVE A CASTELLO, GIRO BREVE DELLE CHIESE DI CASTELLO
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour5.class); //GIRO MEDIO A CASTELLO,GIRO MEDIO DELLE CHIESE DI CASTELLO
+                } else {
+                    intent = new Intent(Pianifica.this, Tour6.class); // GIRO COMPLETO DI CASTELLO, GIRO COMPLETO DELLE CHIESE DI CASTELLO, DA CASTELLO A MONTE CLARO
+                }
             }
-        } else if ("In bus".equals(transportation)) {
-            if (time == 30) {
-                intent = new Intent(Pianifica.this, Tour4.class); // A piedi e meno di 30 minuti
-            } else if (time == 45) {
-                intent = new Intent(Pianifica.this, Tour5.class); // A piedi e da 30 minuti a 1 ora
-            } else {
-                intent = new Intent(Pianifica.this, Tour6.class); // A piedi e da 1 a 2 ore
+        } else if (position.equals("Zona gialla")) {
+            if ("A piedi".equals(transportation)) {
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour7.class); //GIRO BREVE DI VILLANOVA
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour8.class); //GIRO LUNGO DI VILLANOVA
+                } else {
+                    intent = new Intent(Pianifica.this, Tour9.class); //GIRO DELLE CHIESE DI CASTELLO E VILLANOVA
+                }
+            } else  {
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour10.class); // GIRO BREVE DI VILLANOVA
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour11.class); //GIRO DI VILLANOVA E AI GIARDINI PUBBLICI
+                } else {
+                    intent = new Intent(Pianifica.this, Tour12.class); //GIRO PER VILLANOVA E PARCO DI MONTE URPINU
+                }
             }
-        } else  {
-            if (time == 30) {
-                intent = new Intent(Pianifica.this, Tour7.class); // A piedi e meno di 30 minuti
-            } else if (time == 45) {
-                intent = new Intent(Pianifica.this, Tour8.class); // A piedi e da 30 minuti a 1 ora
+        } else if (position.equals("Zona arancione")) {
+            if ("A piedi".equals(transportation)) {
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour13.class); //GIRO BREVE DELLE CHIESE DI STAMPACE, GIRO STORICO BREVE DI STAMPACE
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour14.class); //GIRO INTERMEDIO DELLE CHIESE DI STAMPACE, GIRO STORICO INTERMEDIO DI STAMPACE
+                } else {
+                    intent = new Intent(Pianifica.this, Tour15.class); //GIRO COMPLETO DI STAMPACE E DELLE VIE DELLA MARINA
+                }
             } else {
-                intent = new Intent(Pianifica.this, Tour9.class); // A piedi e da 1 a 2 ore
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour16.class); //GIRO IN BICI AL PORTO
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour17.class); //GIRO INTERMEDIO DELLE CHIESE DI STAMPACE, GIRO COMPLETO DI STAMPACE
+                } else {
+                    intent = new Intent(Pianifica.this, Tour18.class); //GIRO AL CENTRO DI CAGLIARI
+                }
+            }
+        } else {
+            if ("A piedi".equals(transportation)) {
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour19.class); //GIRO BREVE ALLA MARINA
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour20.class); //GIRO DELLE CHIESE DELLA MARINA
+                } else {
+                    intent = new Intent(Pianifica.this, Tour21.class); //DA VIA ROMA A PIAZZA YENNE PASSANDO PER LA MARINA
+                }
+            } else {
+                if (time == 30) {
+                    intent = new Intent(Pianifica.this, Tour22.class); //GIRO BREVE ALLA MARINA
+                } else if (time == 45) {
+                    intent = new Intent(Pianifica.this, Tour23.class); //GIRO DELLE CHIESE DELLA MARINA
+                } else {
+                    intent = new Intent(Pianifica.this, Tour24.class); //GIRO LUNGO AL CENTRO DI CAGLIARI
+                }
             }
         }
 

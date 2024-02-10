@@ -62,7 +62,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Passeggiata al poetto"
+                        android:text="Giro completo a Castello"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->
@@ -88,7 +88,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tour spiaggie"
+                        android:text="Giro completo delle Chiese di Castello"
                         android:textSize="18sp"/>
 
                     <!-- Add other content for the card as needed -->

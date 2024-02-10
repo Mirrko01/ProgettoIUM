@@ -62,8 +62,10 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tour ristretto delle Chiese di Cagliari"
+                        android:text="Giro breve a Villanova"
                         android:textSize="18sp"/>
+
+
 
                     <!-- Add other content for the card as needed -->
 

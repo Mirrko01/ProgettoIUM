@@ -62,39 +62,16 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tour intermedio delle Chiese di Cagliari"
+                        android:text="Giro lungo a Villanova"
                         android:textSize="18sp"/>
+
+
 
                     <!-- Add other content for the card as needed -->
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Card 2 -->
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/tour8_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp"
-                android:layout_marginBottom="16dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Tour dei parchi di Cagliari"
-                        android:textSize="18sp"/>
-
-                    <!-- Add other content for the card as needed -->
-
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
 
             <!-- Add more cards as needed -->
 

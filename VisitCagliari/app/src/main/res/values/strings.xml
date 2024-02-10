@@ -79,13 +79,19 @@ Il Museo attualmente ospita la Collezione Ingrao, esposizione permanente costitu
     <string-array name="transportation_options">
         <item>A piedi</item>
         <item>In bici</item>
-        <item>In bus</item>
     </string-array>
 
     <string-array name="time_options">
         <item>Meno di 30 minuti</item>
         <item>Da 30 minuti a 1 ora</item>
         <item>Da 1 a 2 ore</item>
+    </string-array>
+
+    <string-array name="position_options">
+        <item>Zona rossa</item>
+        <item>Zona gialla</item>
+        <item>Zona arancione</item>
+        <item>Zona blu</item>
     </string-array>
 
 
