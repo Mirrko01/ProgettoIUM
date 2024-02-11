@@ -46,7 +46,7 @@
 
             <!-- Card 1 -->
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/apriItin14_1"
+                android:id="@+id/tour14_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
@@ -73,7 +73,7 @@
 
             <!-- Card 2 -->
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/apriItin14_2"
+                android:id="@+id/tour14_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"

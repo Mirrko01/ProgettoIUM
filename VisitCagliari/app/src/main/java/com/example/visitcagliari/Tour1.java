@@ -30,14 +30,14 @@ public class Tour1 extends AppCompatActivity {
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");
+                openDirections("https://maps.app.goo.gl/LC8aPQ4BUNcHqi6eA");
             }
         });
 
         card2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");
+                openDirections("https://maps.app.goo.gl/XXwftAFdwoMHjLSY6");
             }
         });
 
