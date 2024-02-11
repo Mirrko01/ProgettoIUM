@@ -22,19 +22,11 @@ public class Tour8 extends AppCompatActivity {
 
         // Trova le card
         card1 = findViewById(R.id.tour8_1);
-        card2 = findViewById(R.id.tour8_2);
 
         undo= findViewById(R.id.undo);
 
         // Aggiungi il click listener alle card
         card1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");
-            }
-        });
-
-        card2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");

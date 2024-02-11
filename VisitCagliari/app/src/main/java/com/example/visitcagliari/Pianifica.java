@@ -67,7 +67,7 @@ public class Pianifica extends AppCompatActivity {
         String timeString = spinnerTime.getSelectedItem().toString(); // Ottieni il tempo come stringa
 
         Spinner spinnerPosition = findViewById(R.id.spinnerPosition);
-        String position = spinnerTime.getSelectedItem().toString(); // Ottieni il tempo come stringa
+        String position = spinnerPosition.getSelectedItem().toString(); // Ottieni il tempo come stringa
 
 // Estrai il tempo effettivo dalla stringa
         int time;

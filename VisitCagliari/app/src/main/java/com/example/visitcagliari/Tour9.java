@@ -22,7 +22,6 @@ public class Tour9 extends AppCompatActivity {
 
         // Trova le card
         card1 = findViewById(R.id.tour9_1);
-        card2 = findViewById(R.id.tour9_2);
 
         undo= findViewById(R.id.undo);
 
@@ -34,12 +33,6 @@ public class Tour9 extends AppCompatActivity {
             }
         });
 
-        card2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openDirections("https://maps.app.goo.gl/XtcjwTgRXzb38eQMA");
-            }
-        });
 
         undo.setOnClickListener(new View.OnClickListener() {
             @Override
