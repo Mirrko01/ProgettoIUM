@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
     tools:context=".Pianifica">
 
     <Spinner
@@ -14,7 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
-        android:textColor="@color/text_color"
         android:entries="@array/transportation_options"/>
 
     <Spinner
@@ -24,7 +22,6 @@
         android:layout_below="@id/spinnerTransportation"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
-        android:textColor="@color/text_color"
         android:entries="@array/time_options"/>
 
     <Spinner
@@ -34,15 +31,16 @@
         android:layout_below="@id/spinnerTime"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
-        android:textColor="@color/text_color"
         android:entries="@array/position_options"/>
 
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:src="@drawable/cartina_quartieri_1" />
+        android:src="@drawable/cartina_quartieri_1"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"/>
+
 
     <Button
         android:id="@+id/buttonSubmit"
@@ -50,8 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/image_view"
         android:layout_centerHorizontal="true"
-        android:text="Calcola"
-        android:textColor="@android:color/white"
-        android:background="@drawable/button_background" />
+        android:layout_marginTop="16dp"
+        android:text="Calcola" />
 
 </RelativeLayout>
