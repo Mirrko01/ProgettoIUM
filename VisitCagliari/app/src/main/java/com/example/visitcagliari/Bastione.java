@@ -1,6 +1,9 @@
 package com.example.visitcagliari;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
@@ -18,7 +21,7 @@ public class Bastione extends FragmentActivity implements OnMapReadyCallback {
 
     GoogleMap gmap;
     FrameLayout map;
-
+    ImageView undo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,16 @@ public class Bastione extends FragmentActivity implements OnMapReadyCallback {
         map = findViewById(R.id.map);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        undo=findViewById(R.id.undo);
+
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Bastione.this, Monumenti.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

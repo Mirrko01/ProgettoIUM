@@ -66,10 +66,12 @@
 
         <LinearLayout
             android:id="@+id/bastione"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -77,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:text="BASTIONE DI SAINT REMY"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textColor="#000000"
                 android:gravity="start"/>
 
             <!-- Spazio tra TextView e ImageView -->
@@ -100,10 +102,12 @@
 
         <LinearLayout
             android:id="@+id/elefante"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -111,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:text="TORRE DELL'ELEFANTE"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textColor="#000000"
                 android:gravity="start"/>
 
             <Space
@@ -130,10 +134,12 @@
 
         <LinearLayout
             android:id="@+id/castello"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -141,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:text="CASTELLO DI SAN MICHELE"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textColor="#000000"
                 android:gravity="start"/>
 
             <Space
@@ -160,10 +166,12 @@
 
         <LinearLayout
             android:id="@+id/cristina"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -171,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:text="PORTA CRISTINA              "
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textColor="#000000"
                 android:gravity="start"/>
 
             <Space

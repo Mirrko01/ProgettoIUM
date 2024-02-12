@@ -65,10 +65,13 @@
 
         <LinearLayout
             android:id="@+id/bonaria"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow"
+            >
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -99,10 +102,12 @@
 
         <LinearLayout
             android:id="@+id/saturnino"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -129,10 +134,12 @@
 
         <LinearLayout
             android:id="@+id/efisio"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -160,10 +167,12 @@
 
         <LinearLayout
             android:id="@+id/vergine"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView

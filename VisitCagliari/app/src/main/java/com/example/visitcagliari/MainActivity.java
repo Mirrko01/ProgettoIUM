@@ -66,16 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-        Button map = findViewById(R.id.provaMappa);
-        map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ItinerarioActivity.class);
-                startActivity(intent);
-
-            }
-        });
     }
 
     private boolean authenticate(String username, String password) {
@@ -88,13 +78,13 @@ public class MainActivity extends AppCompatActivity {
                     loggedUser = utente;
                     return true; // Login riuscito
                 } else {
-                    Toast.makeText(MainActivity.this, "Password errata", Toast.LENGTH_SHORT).show();
+                    editTextPassword.setError("Password errata!");
                     return false; // Password errata
                 }
             }
         }
         if (!foundUser) {
-            Toast.makeText(MainActivity.this, "Username errato", Toast.LENGTH_SHORT).show();
+            editTextUsername.setError("Username errato!");
         }
         return false; // Utente non trovato
     }

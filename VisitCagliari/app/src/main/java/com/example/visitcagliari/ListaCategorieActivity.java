@@ -1,18 +1,20 @@
 package com.example.visitcagliari;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ListaCategorieActivity extends AppCompatActivity {
 
-    ImageView churchBtn, museumBtn, parkBtn, monumentBtn, accountBtn;
-
+    ImageView churchBtn, museumBtn, parkBtn, monumentBtn, accountBtn, logout;
     Button pianificaBtn;
 
     @Override
@@ -25,7 +27,8 @@ public class ListaCategorieActivity extends AppCompatActivity {
         parkBtn = findViewById(R.id.parkImg);
         monumentBtn = findViewById(R.id.monumentImg);
         pianificaBtn = findViewById(R.id.pianifica);
-        //accountBtn=findViewById(R.id.account);
+        accountBtn=findViewById(R.id.account);
+        logout=findViewById(R.id.logout);
 
         churchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,13 +86,40 @@ public class ListaCategorieActivity extends AppCompatActivity {
             }
         });
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showConfirmationDialog();
+            }
+        });
 
-        /*accountBtn.setOnClickListener(new View.OnClickListener() {
+
+        accountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ListaCategorieActivity.this, DatiPersonali.class);
                 startActivity(intent);
             }
-        });*/
+        });
+    }
+
+    private void showConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Sei sicuro di voler effettuare il logout?");
+        builder.setPositiveButton("Sì, sono sicuro", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(ListaCategorieActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        builder.setNegativeButton("No, voglio rimanere", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

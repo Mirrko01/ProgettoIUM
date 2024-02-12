@@ -107,7 +107,9 @@
             android:inputType="textPassword"
             android:hint="Inserisci la tua password"
             android:textColorHint="@color/white" />
-
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
@@ -115,9 +117,13 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/button_background"
             android:padding="12dp"
-            android:text="Login"
+            android:text="ACCEDI"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
 
         <Button
             android:id="@+id/registrazioneRedirect"
@@ -126,19 +132,11 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/button_background"
             android:padding="12dp"
-            android:text="Registrati"
+            android:text="REGISTRATI"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/provaMappa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:padding="12dp"
-            android:text="Mappa"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

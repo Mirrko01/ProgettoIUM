@@ -42,15 +42,18 @@ public class RegistrazioneActivity extends AppCompatActivity {
 
 
                 if(!isStringPulita(nome)){
-                    Toast.makeText(RegistrazioneActivity.this, "Nome non valido", Toast.LENGTH_SHORT).show();
+                    editTextNome.setError("Il nome non può essere vuoto e non può contenere numeri");
                     editTextNome.setText("");
                 }
                 else if(!isStringPulita(cognome)){
-                    Toast.makeText(RegistrazioneActivity.this, "Cognome non valido", Toast.LENGTH_SHORT).show();
+                    editTextCognome.setError("Il cognome non può essere vuoto e non può contenere numeri");
                     editTextCognome.setText("");
                 }
+                else if(!isStringPulita(username)){
+                    editTextUsername.setError("Lo username non può essere vuoto e non può contenere numeri");
+                }
                 else if(!password.equals(conferma)){
-                    Toast.makeText(RegistrazioneActivity.this, "Le due password non corrispondono", Toast.LENGTH_SHORT).show();
+                    editTextPassword.setError("Le due password non sono uguali");
                     editTextPassword.setText("");
                     confermPSW.setText("");
                 }

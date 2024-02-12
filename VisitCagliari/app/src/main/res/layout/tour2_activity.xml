@@ -60,10 +60,15 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Giro intermedio di Castello"
+                        android:text="Tour intermedio di Castello"
                         android:textSize="18sp"/>
 
-                    <!-- Add other content for the card as needed -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Tour approfondito del quartiere storico di Castello\n\n Durata: 1 ora"
+                        />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -86,10 +91,15 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Giro intermedio delle Chiese di Castello"
+                        android:text="Tour intermedio delle Chiese di Castello"
                         android:textSize="18sp"/>
 
-                    <!-- Add other content for the card as needed -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Un approfondito tour a piedi alla scoperta delle chiese del quartiere di Castello\n\n Durata: 1 ora"
+                        />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>

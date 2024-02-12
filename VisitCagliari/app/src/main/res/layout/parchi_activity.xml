@@ -67,10 +67,12 @@
 
         <LinearLayout
             android:id="@+id/monteclaro"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -101,10 +103,12 @@
 
         <LinearLayout
             android:id="@+id/urpinu"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -129,10 +133,12 @@
             android:layout_height="25dp"/>
         <LinearLayout
             android:id="@+id/giardini"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView
@@ -158,10 +164,12 @@
             android:layout_height="25dp"/>
         <LinearLayout
             android:id="@+id/terramaini"
-            android:layout_width="408dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/shadow">
 
             <!-- TextView per il nome della chiesa -->
             <TextView

@@ -62,12 +62,15 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Giro breve a Castello"
+                        android:text="Tour breve a Castello"
                         android:textSize="18sp"
                         android:textColor="@android:color/black" />
 
-                    <!-- Add other content for the card as needed -->
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Un breve tour a piedi del quartiere storico di Castello\n\nDurata: 20 minuti"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -89,11 +92,15 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Giro breve delle Chiese di Castello"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/black" />
-
-                    <!-- Add other content for the card as needed -->
+                        android:text="Tour breve delle Chiese di Castello"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Un breve tour a piedi alla scoperta delle chiese del quartiere di Castello\n\n Durata: 24 minuti"
+                        />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
