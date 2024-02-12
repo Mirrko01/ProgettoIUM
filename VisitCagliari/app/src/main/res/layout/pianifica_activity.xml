@@ -1,45 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- layout/activity_main.xml -->
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
     tools:context=".Pianifica">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#FF6750A3"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:background="#FF6750A3"
-            >
-
-            <ImageView
-                android:id="@+id/undo"
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
-                android:src="@drawable/back"
-                android:layout_gravity="start"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="5dp"
-                android:text="TROVA ITINERARIO"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:layout_width="300dp"
@@ -52,8 +19,6 @@
         android:text="Seleziona le tue preferenze per pianificare al meglio il tuo itinerario:"
         android:textColor="@color/text_color"
         android:textSize="18dp" />
-
-
     <Spinner
         android:id="@+id/spinnerTransportation"
         android:layout_width="match_parent"
@@ -87,11 +52,11 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="80dp"
-        android:src="@drawable/cartina_quartieri_1"/>
+        android:src="@drawable/cartina_quartieri_1" />
 
     <Button
         android:id="@+id/buttonSubmit"
@@ -100,7 +65,7 @@
         android:layout_below="@id/spinnerPosition"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="450dp"
-        android:text="TROVA ITINERARIO"
+        android:text="TROVA IL TOUR ADATTO A TE"
         android:textColor="@android:color/white"
         android:background="@drawable/button_background" />
 
