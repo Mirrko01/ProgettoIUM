@@ -74,7 +74,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Card 2 -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/apriItin2"
                 android:layout_width="match_parent"

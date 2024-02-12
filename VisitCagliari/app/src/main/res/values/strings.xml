@@ -77,21 +77,24 @@ Il primo nucleo della collezione pittorica si formò nel XIX secolo quando, a se
 Il Museo attualmente ospita la Collezione Ingrao, esposizione permanente costituita dalle opere dei più grandi maestri italiani del Novecento, da Umberto Boccioni a Giorgio Morandi, da Filippo De Pisis a Mario Mafai, le sculture di Francesco Ciusa.</string>
 
     <string-array name="transportation_options">
+        <item>Come vuoi muoverti?</item>
         <item>A piedi</item>
         <item>In bici</item>
     </string-array>
 
     <string-array name="time_options">
+        <item>Quanto tempo hai a disposizione?</item>
         <item>Meno di 30 minuti</item>
         <item>Da 30 minuti a 1 ora</item>
         <item>Da 1 a 2 ore</item>
     </string-array>
 
     <string-array name="position_options">
-        <item>Zona rossa</item>
-        <item>Zona gialla</item>
-        <item>Zona arancione</item>
-        <item>Zona blu</item>
+        <item>In quale zona ti trovi?</item>
+        <item>Zona rossa (Castello)</item>
+        <item>Zona gialla (Villanova)</item>
+        <item>Zona arancione (Stampace)</item>
+        <item>Zona blu (Marina)</item>
     </string-array>
 
 

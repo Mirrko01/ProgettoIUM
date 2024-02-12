@@ -45,10 +45,8 @@
             android:src="@drawable/account"
             android:layout_gravity="start" />
     </LinearLayout>
-
-
-
 </androidx.appcompat.widget.Toolbar>
+
 
     <LinearLayout
         app:layout_constraintBottom_toTopOf="@id/grid"
@@ -72,7 +70,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
-            android:text="SCEGLI LA TUA CATEGORIA PREFERITA\nOPPURE PIANIFICA IL TUO ITINERARIO!"
+            android:text="SCEGLI LA TUA CATEGORIA PREFERITA\nOPPURE TROVA IL TUO ITINERARIO!"
             />
     </LinearLayout>
 
@@ -147,7 +145,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="PIANIFICA TOUR"/>
+            android:text="TROVA IL TOUR ADATTO A TE"/>
 
     </LinearLayout>
 

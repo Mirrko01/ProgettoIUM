@@ -1,6 +1,7 @@
 package com.example.visitcagliari;
 
 // MainActivity.java
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +9,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Pianifica extends AppCompatActivity {
@@ -18,12 +21,14 @@ public class Pianifica extends AppCompatActivity {
     private Spinner spinnerTime;
     private Spinner spinnerTransportation;
     private Button buttonSubmit;
+    ImageView undo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pianifica_activity);
 
+        undo=findViewById(R.id.undo);
         spinnerTime = findViewById(R.id.spinnerTime);
         spinnerTransportation = findViewById(R.id.spinnerTransportation);
         buttonSubmit = findViewById(R.id.buttonSubmit);
@@ -53,7 +58,16 @@ public class Pianifica extends AppCompatActivity {
                 calculateResult();
             }
         });
+
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Pianifica.this, ListaCategorieActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
     private void calculateResult() {
         Intent intent;
@@ -75,8 +89,15 @@ public class Pianifica extends AppCompatActivity {
             time = 30; // Se è "Meno di 30 minuti", imposta il tempo a 30 minuti
         } else if (timeString.startsWith("Da 30 minuti")) {
             time = 45; // Se è "Da 30 minuti a 1 ora", imposta il tempo a 45 minuti (la media del range)
-        } else  {
+        } else if(timeString.startsWith("Da 1")) {
             time = 90; // Se è "Da 1 a 2 ore", imposta il tempo a 90 minuti (la media del range)
+        }else{
+            time=0;
+        }
+
+        if(time==0 || position.startsWith("In quale") || transportation.startsWith("Come")){
+            showConfirmationDialog();
+            return;
         }
 
 // Esegui il controllo del trasporto e apri l'intento corrispondente
@@ -134,7 +155,7 @@ public class Pianifica extends AppCompatActivity {
                     intent = new Intent(Pianifica.this, Tour18.class); //GIRO AL CENTRO DI CAGLIARI
                 }
             }
-        } else {
+        } else{
             if ("A piedi".equals(transportation)) {
                 if (time == 30) {
                     intent = new Intent(Pianifica.this, Tour19.class); //GIRO BREVE ALLA MARINA
@@ -156,5 +177,18 @@ public class Pianifica extends AppCompatActivity {
 
 // Avvia l'attività corrispondente
         startActivity(intent);
+    }
+
+    private void showConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Seleziona un valore valido per ogni campo");
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
