@@ -147,7 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Pianifica itinerario"/>
+            android:text="PIANIFICA TOUR"/>
 
     </LinearLayout>
 
