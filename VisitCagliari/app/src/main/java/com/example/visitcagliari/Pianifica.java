@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -17,20 +20,37 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+
 public class Pianifica extends AppCompatActivity {
 
     private Spinner spinnerTime;
     private Spinner spinnerTransportation;
     private Button buttonSubmit;
+    GoogleMap gmap;
+    FrameLayout map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pianifica_activity);
+
+        WebView webView;
         ImageView undo=findViewById(R.id.undo);
         spinnerTime = findViewById(R.id.spinnerTime);
         spinnerTransportation = findViewById(R.id.spinnerTransportation);
         buttonSubmit = findViewById(R.id.buttonSubmit);
+
+
+        webView = findViewById(R.id.webview);
+        webView.getSettings().setJavaScriptEnabled(true); // Abilita JavaScript se necessario
+        webView.setWebViewClient(new WebViewClient()); // Gestione delle richieste di caricamento della WebView
+
+        // Carica l'URL della mappa
+        String mapUrl = "https://www.google.com/maps/d/u/0/embed?mid=1rsF07ojBQ1eD_PRISxG15KQKvS7iLCM&ehbc=2E312F&noprof=1";
+        webView.loadUrl(mapUrl);
 
         // Populating spinner with transportation options
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(
@@ -190,4 +210,6 @@ public class Pianifica extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+
+
 }

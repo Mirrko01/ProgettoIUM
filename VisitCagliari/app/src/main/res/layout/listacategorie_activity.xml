@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.Toolbar
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="60dp"
     android:background="#FF6750A3"
     app:layout_constraintBottom_toTopOf="@+id/linearLayout">
 
@@ -39,7 +39,7 @@
             android:textColor="@color/white"/>
         <ImageView
             android:id="@+id/account"
-            android:layout_width="40dp"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="250dp"
             android:src="@drawable/account"
