@@ -3,12 +3,14 @@ package com.example.visitcagliari;
 // MainActivity.java
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -25,7 +27,7 @@ public class Pianifica extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pianifica_activity);
-
+        ImageView undo=findViewById(R.id.undo);
         spinnerTime = findViewById(R.id.spinnerTime);
         spinnerTransportation = findViewById(R.id.spinnerTransportation);
         buttonSubmit = findViewById(R.id.buttonSubmit);
@@ -53,6 +55,15 @@ public class Pianifica extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 calculateResult();
+            }
+        });
+
+
+        undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Pianifica.this, ListaCategorieActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -45,9 +45,6 @@
             android:src="@drawable/account"
             android:layout_gravity="start" />
     </LinearLayout>
-
-
-
 </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
