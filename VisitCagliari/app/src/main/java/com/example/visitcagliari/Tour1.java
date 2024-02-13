@@ -1,11 +1,13 @@
 package com.example.visitcagliari;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.card.MaterialCardView;
@@ -30,14 +32,14 @@ public class Tour1 extends AppCompatActivity {
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDirections("https://maps.app.goo.gl/LC8aPQ4BUNcHqi6eA");
+                showConfirmationDialog("https://maps.app.goo.gl/LC8aPQ4BUNcHqi6eA");
             }
         });
 
         card2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDirections("https://maps.app.goo.gl/XXwftAFdwoMHjLSY6");
+                showConfirmationDialog("https://maps.app.goo.gl/XXwftAFdwoMHjLSY6");
             }
         });
 
@@ -58,5 +60,19 @@ public class Tour1 extends AppCompatActivity {
         // Apri l'itinerario in una nuova finestra del browser
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
+    }
+
+    private void showConfirmationDialog(String url) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Il tour sta per iniziare, verrai reindirizzato su Google Maps!");
+        builder.setPositiveButton("Va bene", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                openDirections(url);
+
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

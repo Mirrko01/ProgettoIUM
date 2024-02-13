@@ -1,6 +1,7 @@
 package com.example.visitcagliari;
 
 // MainActivity.java
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Pianifica extends AppCompatActivity {
@@ -75,8 +77,15 @@ public class Pianifica extends AppCompatActivity {
             time = 30; // Se è "Meno di 30 minuti", imposta il tempo a 30 minuti
         } else if (timeString.startsWith("Da 30 minuti")) {
             time = 45; // Se è "Da 30 minuti a 1 ora", imposta il tempo a 45 minuti (la media del range)
-        } else  {
+        } else if(timeString.startsWith("Da 1 a")){
             time = 90; // Se è "Da 1 a 2 ore", imposta il tempo a 90 minuti (la media del range)
+        }
+        else{
+            time=0;
+        }
+        if(time==0 && position.startsWith("In che zona") && transportation.startsWith("Come ti sposterai")){
+            showConfirmationDialog();
+            return;
         }
 
 // Esegui il controllo del trasporto e apri l'intento corrispondente
@@ -156,5 +165,18 @@ public class Pianifica extends AppCompatActivity {
 
 // Avvia l'attività corrispondente
         startActivity(intent);
+    }
+
+    private void showConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Devi dare un valore a tutti i campi!");
+        builder.setPositiveButton("Va bene", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
