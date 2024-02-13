@@ -66,7 +66,7 @@
         <LinearLayout
             android:id="@+id/archeologico"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"
@@ -102,7 +102,7 @@
         <LinearLayout
             android:id="@+id/galleria"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"
@@ -134,7 +134,7 @@
         <LinearLayout
             android:id="@+id/pinacoteca"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"
@@ -167,7 +167,7 @@
         <LinearLayout
             android:id="@+id/cittadella"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"

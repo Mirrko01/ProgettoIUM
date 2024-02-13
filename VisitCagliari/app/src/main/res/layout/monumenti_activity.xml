@@ -67,7 +67,7 @@
         <LinearLayout
             android:id="@+id/bastione"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"
@@ -103,7 +103,7 @@
         <LinearLayout
             android:id="@+id/elefante"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"
@@ -135,7 +135,7 @@
         <LinearLayout
             android:id="@+id/castello"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"
@@ -167,7 +167,7 @@
         <LinearLayout
             android:id="@+id/cristina"
             android:layout_marginLeft="5dp"
-            android:layout_width="400dp"
+            android:layout_width="380dp"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:gravity="center"
