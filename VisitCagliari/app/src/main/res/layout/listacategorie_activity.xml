@@ -72,7 +72,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
-            android:text="SCEGLI LA TUA CATEGORIA PREFERITA\nOPPURE PIANIFICA IL TUO ITINERARIO!"
+            android:text="SCEGLI LA TUA CATEGORIA PREFERITA\nOPPURE TROVA L'ITINERARIO PERFETTO PER TE!"
             />
     </LinearLayout>
 
@@ -147,8 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="PIANIFICA TOUR"/>
-
+            android:text="TROVA IL TOUR PERFETTO PER TE "/>
     </LinearLayout>
 
 
